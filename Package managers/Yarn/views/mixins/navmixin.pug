@@ -1,0 +1,13 @@
+mixin nav(navtitles)
+    nav(class="navbar app-nav")
+        ul(class="nav sub-nav")
+            each title in navtitles
+                li
+                    h4(class="mb-0")
+                        a(href="#")=title
+mixin nav-search()
+     nav(class="navbar app-nav")
+        div(class="input-group search-nav")
+            input(class="form-control search-input" type="text" placeholder="Search")
+            span(class="input-group-addon search-icon")
+                i(class="fa fa-search" aria-hidden="true")
