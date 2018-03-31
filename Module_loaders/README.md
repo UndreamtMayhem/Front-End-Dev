@@ -14,36 +14,8 @@ Whats included
 - CSS autoprefixer
 - posthtml-img-autosize 
 
-## Getting started
-'''
 
-yarn install
-
-'''
-
-### Development
-
-```
-
-parcel index.html
-
-```
-Files appear in /dist folder
-
-### Production
-
-```
-
-parcel build entry.js
-
-```
-Files appear in /dist folder
-
-The minifiers used by Parcel are uglify-es for JavaScript, cssnano for CSS, and htmlnano for HTML.
-
----
-
-## 1. Parcel Module Loader
+## 2. Webpack Module Loader
 
 Whats included
 - Uses NPM and Express
@@ -58,48 +30,6 @@ Whats included
     - CSS autoprefixer
     - posthtml-img-autosize 
 
-## Getting started
-
-'''
-
-npm install
-
-'''
-### Development
-
-```
-change
-  {
-    mode: 'development',
-  }
-
-
-npm run build
-
-npm run start
-
-npm run server
-
-```
-
-Files appear in /dist folder
-
-### Production
-
-```
-change
-  {
-    mode: 'production',
-  }
-
-  npm run build
-
-npm run start
-
-npm run server
-
-```
-Files appear in /dist folder
 
 ### TODO
 Make parcel and webpack readme
