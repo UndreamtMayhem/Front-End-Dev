@@ -34,11 +34,7 @@ if (isDeveloping) {
     app.use(middleware);
     app.use(webpackHotMiddleware(compiler));
     app.get('*', function response(req, res) {
-        console.log(path.join(__dirname, 'dist/index.html'));
         res.sendFile(path.join(__dirname, 'dist/index.html'));
-      //https://github.com/christianalfoni/webpack-express-boilerplate/blob/master/server.js
-      //res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
-      //res.end();
     });
   } else {
     app.use(express.static(__dirname + '/dist'));

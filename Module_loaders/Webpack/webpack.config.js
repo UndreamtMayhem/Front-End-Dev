@@ -1,18 +1,20 @@
-// Use  HtmlWebpackPlugin to generate html file for you
-// const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-var webpack = require('webpack');
+/* node dependencies  */
+const path = require('path');
 
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var ImageminPlugin = require('imagemin-webpack-plugin').default
-//const CompressionPlugin = require("compression-webpack-plugin")
+/* Webpack Plugins 
+
+    // Use HtmlWebpackPlugin to generate html file for you
+    // const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+    // const CompressionPlugin = require("compression-webpack-plugin")
+
+*/
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-
-
-const path = require('path');
 module.exports = {
-
     entry: './src/js/index.js',
     mode: 'development',
     output: {
@@ -65,17 +67,15 @@ module.exports = {
                     }
                 ]
             },
-
         ]
-
     },
-
     plugins: [
         // css to seperate file
         new ExtractTextPlugin({ filename: 'app.bundle.css' }),
         new CopyWebpackPlugin([
             { from: 'src/images', to: 'images' }
         ]),
+        // Optimise Images
         new ImageminPlugin({
             test: /\.(jpe?g|png|gif|svg)$/i,
             optipng: {
@@ -100,5 +100,3 @@ module.exports = {
         */
     ]
 };
-
-//https://webpack.js.org/guides/asset-management/
