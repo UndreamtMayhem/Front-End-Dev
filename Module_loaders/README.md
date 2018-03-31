@@ -1,11 +1,12 @@
 # Module Loaders
+--- 
 1. Parcel.js
 2. Webpack
 
---- 
+
 
 ## 1. Parcel Module Loader
-
+--- 
 Whats included
 - Processing typescript
 - Processing Js
@@ -15,6 +16,7 @@ Whats included
 
 ## Getting started
 '''
+
 yarn install
 
 '''
@@ -22,6 +24,7 @@ yarn install
 ### Development
 
 ```
+
 parcel index.html
 
 ```
@@ -30,6 +33,7 @@ Files appear in /dist folder
 ### Production
 
 ```
+
 parcel build entry.js
 
 ```
@@ -55,7 +59,9 @@ Whats included
     - posthtml-img-autosize 
 
 ## Getting started
+
 '''
+
 npm install
 
 '''
@@ -67,13 +73,14 @@ change
     mode: 'development',
   }
 
-```
+
 npm run build
 
 npm run start
 
 npm run server
 
+```
 
 Files appear in /dist folder
 
@@ -91,9 +98,8 @@ npm run start
 
 npm run server
 
-
-Files appear in /dist folder
 ```
+Files appear in /dist folder
 
 ### TODO
 Make parcel and webpack readme
