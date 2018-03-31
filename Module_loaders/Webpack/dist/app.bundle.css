@@ -1,0 +1,18 @@
+body {
+
+    margin: 100px;
+}div {
+  background-color: #99cc00;
+  padding: 10px; }
+
+.settingIcon {
+  background-image: url(2d32d189f495d5803dbe669bd0e3cf80.gif);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  display: inline-block; }
+body {
+  font: verdana, sans-serif;
+  background-color: #f3e2c7; }
+  body h1, body h2 {
+    color: #b68d4c; }

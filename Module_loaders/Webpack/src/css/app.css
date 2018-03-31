@@ -1,0 +1,14 @@
+@import 'body.css';
+
+div {
+    background-color:#99cc00;
+    padding:100px;
+}
+
+.settingIcon{
+    background-image:url('/dist/images/icon.gif');
+    background-repeat:no-repeat;
+    height:50px;
+    width:50px;
+    display:inline-block;
+}
