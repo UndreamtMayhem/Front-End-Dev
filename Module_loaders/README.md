@@ -1,12 +1,10 @@
 # Module Loaders
---- 
 1. Parcel.js
 2. Webpack
 
 
 
-## 1. Parcel Module Loader
---- 
+## 1. Parcel Module Loader 
 Whats included
 - Processing typescript
 - Processing Js

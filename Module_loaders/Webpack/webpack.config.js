@@ -88,11 +88,12 @@ module.exports = {
         new UglifyJsPlugin({
             test: /\.js($|\?)/i
         }),
+        /*
         new webpack.debug.ProfilingPlugin({
             outputPath: "profiling/profileEvents.json"
         }),
 
-        /*
+        
         new CompressionPlugin({
             test: /\.css/
         }),

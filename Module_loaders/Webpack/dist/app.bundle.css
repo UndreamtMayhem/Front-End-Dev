@@ -1,17 +1,10 @@
 body {
-    margin: 100px;
+    margin: 10px;
 }div {
   background-color: #99cc00;
-  padding: 100px; }
-
-.settingIcon {
-  background-image: url("/dist/images/icon.gif");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  display: inline-block; }
+  padding: 10px 0; }
 body {
-  font: verdana, sans-serif;
+  font: "verdana, sans-serif";
   background-color: #f3e2c7; }
   body h1, body h2 {
     color: #b68d4c; }

@@ -8,10 +8,10 @@ Whats included
 
 ## Getting started
 
-'''
+```
 yarn install
 
-'''
+```
 
 ### Development
 

@@ -526,11 +526,11 @@
 /*!***************************!*\
   !*** ./src/js/greeter.js ***!
   \***************************/
-/*! exports provided: default */function(e,t,n){"use strict";n.r(t);var a=n(/*! moment */"./node_modules/moment/moment.js"),s=n.n(a);t.default=function(){var e=s()().format("dddd");console.log("Have a great "+e+"!")}},"./src/js/index.js":
+/*! exports provided: default */function(e,t,n){"use strict";n.r(t);var a=n(/*! moment */"./node_modules/moment/moment.js"),s=n.n(a);t.default=function(){return"Have a great "+s()().format("dddd")+"!"}},"./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no exports provided */function(e,t,n){"use strict";n.r(t);var a=n(/*! ./greeter */"./src/js/greeter.js"),s=n(/*! lodash */"./node_modules/lodash/lodash.js"),r=(n(/*! ./../css/app.css */"./src/css/app.css"),n(/*! ./../styles/appStyles.scss */"./src/styles/appStyles.scss"),n(/*! ../images/autumn.jpg */"./src/images/autumn.jpg")),o=n.n(r);document.getElementById("frontImg").src=o.a,document.getElementById(".time").innerHTML("Welcome! Greetings from app.js. Let's learn Webpack2 "+Object(a.default)());s.each([1,2,3],function(e){console.log("Output from Lodash _.each for Element "+e)})},"./src/styles/appStyles.scss":
+/*! no exports provided */function(e,t,n){"use strict";n.r(t);var a=n(/*! ./greeter */"./src/js/greeter.js"),s=n(/*! lodash */"./node_modules/lodash/lodash.js"),r=(n(/*! ./../css/app.css */"./src/css/app.css"),n(/*! ./../styles/appStyles.scss */"./src/styles/appStyles.scss"),n(/*! ../images/autumn.jpg */"./src/images/autumn.jpg")),o=n.n(r);document.getElementById("frontImg").src=o.a;var i=document.getElementById("time"),d=document.createElement("h2"),_=document.createTextNode("Greetings from app.js. Let's learn Webpack2 "+Object(a.default)());d.appendChild(_),i.appendChild(d);s.each([1,2,3],function(e){console.log("Output from Lodash _.each for Element "+e)})},"./src/styles/appStyles.scss":
 /*!***********************************!*\
   !*** ./src/styles/appStyles.scss ***!
   \***********************************/
