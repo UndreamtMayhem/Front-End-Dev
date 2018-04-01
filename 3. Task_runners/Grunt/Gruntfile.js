@@ -8,6 +8,12 @@ module.exports = function (grunt) {
   'use strict';
 
   grunt.initConfig({
+    /* Clear out the images directory if it exists */
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
 
     responsive_images: {
       dev: {
@@ -32,27 +38,20 @@ module.exports = function (grunt) {
         ]
       }
     },
+    image_resize: {
+      resize: {
+        options: {
+            upscale: true,
+            height: 1000,
+                    },
+        src: ['*.{gif,jpg,png}'],
+        cwd: 'images_src/',
+        dest: 'images/',
 
-        image_resize: {
-          resize: {
-            options: {
-                upscale: true,
-                height: 1000,
-                        },
-            src: ['*.{gif,jpg,png}'],
-            cwd: 'images_src/',
-            dest: 'images/',
-    
-          }, 
-        },
-
-    /* Clear out the images directory if it exists */
-    clean: {
-      dev: {
-        src: ['images'],
-      },
+      }, 
     },
 
+    
     /* Generate the images directory if it is missing */
     mkdir: {
       dev: {
@@ -72,7 +71,6 @@ module.exports = function (grunt) {
         }]
       },
     },
-
 
     // html logic
     htmlmin: {                                     // Task
@@ -114,7 +112,6 @@ module.exports = function (grunt) {
       }
     },
 
-
     // CSS element
     // changes sass to css
     sass: {
@@ -127,6 +124,7 @@ module.exports = function (grunt) {
           }
       }
     },
+
     csscomb: {
       //https://github.com/csscomb/csscomb.js/blob/master/doc/options.md
       foo: {
@@ -153,6 +151,7 @@ module.exports = function (grunt) {
         src: 'dist/css/main.css'
       }
     },
+
     csslint: {
       strict: {
         options: {
@@ -168,7 +167,6 @@ module.exports = function (grunt) {
       }
     },
 
-
     // js
     jsdoc : {
       dist : {
@@ -181,6 +179,7 @@ module.exports = function (grunt) {
     jshint: {
       all: ['js/**/*.js']
     },
+
     // merge the js files together
     concat: {
       options: {
@@ -191,6 +190,7 @@ module.exports = function (grunt) {
         dest: 'dist/js/main.js',
       },
     },
+
     uglify: {
       my_target: {
         files: {
@@ -198,7 +198,6 @@ module.exports = function (grunt) {
         }
       }
     },
-
 
     watch: {
       scripts: {
@@ -211,20 +210,15 @@ module.exports = function (grunt) {
       },
     },
     
-
     jasmine : {
       src : 'src/**/*.js',
       options : {
         specs : 'spec/**/*.js'
       }
     },
-  
-  
-
-
-  
   });
 
+  // Grunt Dependencies
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -257,8 +251,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', 
     [
-      //'clean',
-      //'mkdir', 
+      'clean',
+      'mkdir', 
       //'copy', 
       //'responsive_images',
       //'htmlmin',
@@ -270,8 +264,8 @@ module.exports = function (grunt) {
       //'csslint',
       //'jsdoc',
       //'concat'
-      'jshint',
-      'jasmine'
+      //'jshint',
+      //'jasmine'
       
 ]);
 grunt.registerTask('test', ['jasmine', 'jshint']);

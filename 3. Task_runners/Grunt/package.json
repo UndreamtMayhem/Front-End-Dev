@@ -33,6 +33,7 @@
     "html-min": "0.0.4"
   },
   "dependencies": {
+    "grunt-pixrem": "^0.1.2",
     "grunt-responsive-images": "^0.1.6"
   },
   "description": "## Your Goals: ##",
