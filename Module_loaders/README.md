@@ -31,4 +31,4 @@ Whats included
 
 ### TODO
 - Work on adding rollup js
-- maybe add test suites
+- Maybe add test suites

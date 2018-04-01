@@ -70,5 +70,5 @@ Files appear in /dist folder
 
 ## TODO
 
--   work on adding more plugins         [https://github.com/webpack/webpack/tree/master/examples]
--   do Hot Module Replacement
+-   Work on adding more plugins         [https://github.com/webpack/webpack/tree/master/examples]
+-   Do Hot Module Replacement
