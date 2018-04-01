@@ -30,5 +30,5 @@ Whats included
 
 
 ### TODO
-Make parcel and webpack readme
-add test for parcel
+- Work on adding rollup js
+- maybe add test suites
