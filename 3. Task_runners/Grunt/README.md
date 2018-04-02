@@ -53,38 +53,34 @@ npm start
 ![logo](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/browserimagefetch.png "didnt read")
 
 
-### what it uses
+### What grunt uses
+- Grunt Tasks
+    1. grunt-contrib-clean
+    2. grunt-mkdir
+    3. grunt-contrib-copy
+    4. grunt-contrib-watch
+- Grunt Responsive Images
+    1. grunt-responsive-images'
+    2. grunt-image-resize
+- Grunt html
+    1. grunt-contrib-pug
+    2. grunt-contrib-htmlmin
+- Grunt CSS and SASS
+    1. grunt-sass
+    2. grunt-postcss
+    3. grunt-contrib-csslint
+    4. grunt-csscomb
+- Grunt JS
+    1. grunt-jsdoc
+    2. grunt-contrib-jshint
+    3. grunt-contrib-uglify'
+    4. grunt-contrib-concat
+- Grunt Test
+    1. grunt-contrib-jasmine
+    2. grunt-mocha-test
 
-// Grunt Dependencies
-  grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-mkdir');
-  grunt.loadNpmTasks('grunt-image-resize');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  // html and pug Plugins
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-pug');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-
-  // css and sass plugins
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-csscomb');
-  
-  // js plugins
-  grunt.loadNpmTasks('grunt-jsdoc');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-
-
-  // Test Plugins
-  grunt.loadNpmTasks('grunt-contrib-jasmine');
-  grunt.loadNpmTasks('grunt-mocha-test');
-
+#### Sidenote
+It is better to do testing via NPM however I included tests in grunt to demonstate an understanding of working with grunt.
 
 ## General Advice ##
 
@@ -94,5 +90,7 @@ Check the page with the Chrome Dev Tools:
 * Change to device emulation mode by clicking the phone icon in the Dev Tools (at the top left next to the magnifying glass icon). Try the various throttling options to emulate a GPRS mobile phone cell connection -- now look at the Network tab. The page takes several minutes to complete loading. (Remember that studies by Amazon, Google and others show an increased drop off in revenue with delays of less than 0.1 seconds!) Even with a good DSL connection, load time is still over 10 seconds.
 * Try out emulation on different devices, portrait and landscape (click the icon next to the dimensions). What problems do you notice with each image? Which ones look worse?
 
-Check the page from Page Speed Insights 
-
+#### Future Improvements
+1. Make more responsive image types for 4k support
+2. Use WEB p
+3. Use img srcset attribute

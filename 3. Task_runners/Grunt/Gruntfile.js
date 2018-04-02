@@ -270,7 +270,6 @@ module.exports = function (grunt) {
   // html and pug Plugins
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-pug');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
   // css and sass plugins
   grunt.loadNpmTasks('grunt-sass');
