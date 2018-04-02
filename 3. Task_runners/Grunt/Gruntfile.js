@@ -62,12 +62,29 @@ module.exports = function (grunt) {
         options: {
           engine: 'gm',
           sizes: [
-            { name: 'sm', suffix: '_1x', quality: 60, width: 600 },
-            { name: 'sm', suffix: '_2x', quality: 60, width: 1200 },
-            { name: 'md', suffix: '_1x', quality: 60, width: 900 },
-            { name: 'md', suffix: '_2x', quality: 60, width: 1800 },
-            { name: 'lg', suffix: '_1x', quality: 60, width: 1440 },
-            { name: 'lg', suffix: '_2x', quality: 60, width: 2880 }
+            {
+          
+              width: 300,
+              suffix: '_small',
+              quality: 50
+            }, {
+                
+                width: 600,
+                suffix: '_medium',
+                quality: 30
+              },  {
+                name: 'large-x1',
+                width: 800,
+                suffix: '_large_1x',
+                quality: 30
+              },
+              
+              {
+                name: 'large-x2',
+                width: 1600,
+                suffix: '_large_2x',
+                quality: 30
+              }
           ]
         },
         files: [
