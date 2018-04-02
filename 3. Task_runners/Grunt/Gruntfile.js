@@ -6,15 +6,52 @@
 
 module.exports = function (grunt) {
   'use strict';
-
+// image fixing works
   grunt.initConfig({
     /* Clear out the images directory if it exists */
     clean: {
+
+    
       dev: {
-        src: ['images'],
+        src: ['images', 'dist', 'doc'],
       },
     },
 
+    /* Generate the images directory if it is missing */
+    mkdir: {
+      dev: {
+        options: {
+          create: ['images', 'dist', 'doc']
+        },
+      },
+    },
+    image_resize: {
+      resize: {
+        options: {
+          upscale: true,
+          height: 2000,
+          width: 3000
+        },
+        expand: true,
+        src: ['*.{gif,jpg,png}'],
+        //problem
+        cwd: 'src/images/resize/',
+        dest: 'dist/images/resized/',
+      },
+    },
+     /* Copy the "fixed" images that don't go through processing into the images/directory */
+     copy: {
+      dev: {
+        files: [{
+          expand: true,
+          src: '*.{gif,jpg,png}',
+          cwd: 'src/images/fixed/',
+          dest: 'dist/images/'
+        },
+       
+      ]
+      },
+    },
     responsive_images: {
       dev: {
         options: {
@@ -31,46 +68,41 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
+            src: ['*.{jpg,png}'],
+            cwd: 'src/images/',
+            dest: 'dist/images/',
+          },
+          {
+            expand: true,
             src: ['**/*.{jpg,png}'],
-            cwd: 'src/',
-            dest: 'dest/img'
+            cwd: 'dist/images/resized/',
+            dest: 'dist/images/',
+            
           }
         ]
       }
     },
-    image_resize: {
-      resize: {
+//html
+    pug: {
+      compile: {
         options: {
-            upscale: true,
-            height: 1000,
-                    },
-        src: ['*.{gif,jpg,png}'],
-        cwd: 'images_src/',
-        dest: 'images/',
-
-      }, 
-    },
-
-    
-    /* Generate the images directory if it is missing */
-    mkdir: {
-      dev: {
-        options: {
-          create: ['images']
+          data: {
+            debug: false
+          }
         },
-      },
+        files: [{
+          src: "**/*.pug",
+          cwd: "src/views/pug_template/",
+                          
+          dest: "src/views/html/",
+          expand: true,
+          ext: ".html"
+                        
+
+        }]
+      }
     },
 
-    /* Copy the "fixed" images that don't go through processing into the images/directory */
-    copy: {
-      dev: {
-        files: [{
-          expand: true,
-          src: 'images_src/fixed/*.{gif,jpg,png}',
-          dest: 'images/'
-        }]
-      },
-    },
 
     // html logic
     htmlmin: {                                     // Task
@@ -79,37 +111,15 @@ module.exports = function (grunt) {
           removeComments: true,
           collapseWhitespace: true
         },
-        files: {                                   // Dictionary of files
-          'dist/index.html': 'index.html',     // 'destination': 'source'
-        }
+        files: [{                                   // Dictionary of files
+          'dist/index.html': 'src/views/index.html',     // 'destination': 'source'
+        },{
+          src: "**/*.html",
+          cwd: "src/views/html/",
+          dest: "dist/pug/",
+          expand: true,
+        }]
       },
-    },
-    pug: {
-      compile: {
-        options: {
-          data: {
-            debug: false
-          }
-        },
-        files: {
-          'dist/pug/dest.html': ['templates/*.pug']
-        }
-      }
-    },
-    // needs testing
-    htmlhint: {
-      html1: {
-        options: {
-          'tag-pair': true
-        },
-        src: ['index.html']
-      },
-      html2: {
-        options: {
-          'tag-pair': true
-        },
-        src: ['*.html']
-      }
     },
 
     // CSS element
@@ -120,102 +130,101 @@ module.exports = function (grunt) {
       },
       dist: {
           files: {
-              'css/index.css': './sass/foundation/**/foundation.scss'
+              'src/css/foundation.css': 'src/sass/foundation/foundation.scss'
           }
       }
     },
-
-    csscomb: {
-      //https://github.com/csscomb/csscomb.js/blob/master/doc/options.md
-      foo: {
-          files: {
-              'dist/css/main.css': ['css/main.css'],
-          }
-      },
-    },
-    // auto prefix and minify
-    postcss: {
-      options: {
-        map: {
-            inline: false, // save all sourcemaps as separate files...
-            annotation: 'dist/css/maps/' // ...to the specified directory
-        },
   
-        processors: [
-          require('pixrem')(), // add fallbacks for rem units
-          require('autoprefixer')({browsers: 'last 4 versions'}), // add vendor prefixes
-          require('cssnano')() // minify the result
-        ]
+    csscomb: {
+      foo: {
+          files: [{
+            src: "**/*.css",
+            cwd: "src/css/",
+            dest: "dist/css/combed/",
+            expand: true,
+          }]
       },
-      dist: {
-        src: 'dist/css/main.css'
-      }
     },
-
-    csslint: {
-      strict: {
-        options: {
-          import: 2
-        },
-        src: ['dist/css/**/*.css']
+  // auto prefix and minify
+  postcss: {
+    options: {
+      map: {
+          inline: false, // save all sourcemaps as separate files...
+          annotation: 'dist/css/maps/' // ...to the specified directory
       },
-      lax: {
-        options: {
-          import: false
-        },
-        src: ['dist/css/**/*.css']
-      }
-    },
 
-    // js
-    jsdoc : {
-      dist : {
-          src: ['js/*.js'],
-          options: {
-              destination: 'doc'
-          }
-      }
+      processors: [
+        require('pixrem')(), // add fallbacks for rem units
+        require('autoprefixer')({browsers: 'last 4 versions'}), // add vendor prefixes
+        require('cssnano')() // minify the result
+      ]
     },
-    jshint: {
-      all: ['js/**/*.js']
-    },
-
-    // merge the js files together
-    concat: {
+    dist: {
+      src: "**/*.css",
+            cwd: "dist/css/combed/",
+            dest: "dist/css/",
+            expand: true,
+    }
+  },
+  csslint: {
+    strict: {
       options: {
-        separator: ';',
+        import: 2
       },
-      dist: {
-        src: ['js/*.js'],
-        dest: 'dist/js/main.js',
+      src: ['dist/css/**/*.css']
+    },
+    lax: {
+      options: {
+        import: false
       },
-    },
+      src: ['dist/css/**/*.css']
+    }
+  },
 
-    uglify: {
-      my_target: {
-        files: {
-          'dist/js/main.min.js': ['dist/js/main.js']
-        }
-      }
-    },
-
-    watch: {
-      scripts: {
-        files: ['sass/foundation/**/*.scss'],
-        tasks: ['sass'],
+  jshint: {
+    all: ['src/js/**/*.js']
+  },
+   // js
+   jsdoc : {
+    dist : {
+        src: ['src/js/*.js'],
         options: {
-          reload: true,
-          spawn: false,
-        },
-      },
+            destination: 'doc'
+        }
+    }
+  },
+  // merge the js files together
+  concat: {
+    options: {
+      separator: ';',
     },
-    
+    dist: {
+      src: ['src/js/*.js'],
+      dest: 'dist/js/main.js',
+    },
+  },
+
+
+
     jasmine : {
-      src : 'src/**/*.js',
+      src : 'src/js/jasmine/**/*.js',
       options : {
-        specs : 'spec/**/*.js'
+        specs : 'tests/spec/**/*.js'
       }
     },
+    src: ['tests/mocha/spec/**/*.js'],
+
+     // Mocha
+     mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec',
+          captureFile: 'results.txt',
+        },
+        src: ['tests/mocha/spec/feedreader.js'],
+      },
+    }
+
   });
 
   // Grunt Dependencies
@@ -246,30 +255,36 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-mocha-test');
 
 
-
-  grunt.registerTask('default', 
+  grunt.registerTask('build', 
     [
       'clean',
       'mkdir', 
-      //'copy', 
-      //'responsive_images',
-      //'htmlmin',
-      //'pug',
-      //'htmlmin',
-      //'sass',
-      //'csscomb',
-      //'postcss',
+      'copy', 
+      'image_resize',
+      'responsive_images',
+      'pug',
+      'htmlmin',
+      'sass',
+      'csscomb',
+      'postcss',
       //'csslint',
-      //'jsdoc',
-      //'concat'
       //'jshint',
-      //'jasmine'
+      'jsdoc',
+      'concat',
       
 ]);
-grunt.registerTask('test', ['jasmine', 'jshint']);
 
+grunt.registerTask('test', ['jasmine', 'mochaTest']);
+
+
+/*
+//need to sort out clean for this
+grunt.registerTask('style', ['clean', 'sass', 'csscomb', 'postcss', 'csslint'
+]);
+*/
 //https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
 // add 
 //https://www.npmjs.com/package/grunt-template-jasmine-nml

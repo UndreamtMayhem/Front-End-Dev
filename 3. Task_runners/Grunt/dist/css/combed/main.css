@@ -1,0 +1,18 @@
+body
+{max-width: 50em;
+    margin: 0 auto;
+}img
+{
+    width: 100%;
+}article
+{display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction: column;max-width: 50em;border-bottom: 1px solid #ddd;
+
+    -webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;
+}@media screen and (max-width:250px)
+{
+    img
+    {
+        width: 100vw;
+    }
+}
+/*# sourceMappingURL=../dist/css/maps/main.css.map */
