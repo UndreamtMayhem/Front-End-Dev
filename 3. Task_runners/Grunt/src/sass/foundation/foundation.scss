@@ -14,6 +14,8 @@
 @import '../_vendor/sassy-lists/stylesheets/functions/replace';
 @import '../_vendor/sassy-lists/stylesheets/functions/to-list';
 
+
+
 // Settings
 // import your own `settings` here or
 // import and modify the default settings through
@@ -65,7 +67,7 @@
 @import 'components/reveal';
 @import 'components/slider';
 @import 'components/sticky';
-@import 'components/switch';
+@import 'components/_switch';
 @import 'components/table';
 @import 'components/tabs';
 @import 'components/title-bar';

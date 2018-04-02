@@ -4,27 +4,29 @@
   "grunt responsive_images" re-processes images without removing the old ones
 */
 
+//add watch
+// todo = https://github.com/gruntjs/grunt-contrib-watch
 module.exports = function (grunt) {
   'use strict';
-// image fixing works
+  // image fixing works
   grunt.initConfig({
-    /* Clear out the images directory if it exists */
+    /* Clear out the build directory and js docs if it exists */
     clean: {
-
-    
       dev: {
-        src: ['images', 'dist', 'doc'],
+        src: ['dist', 'doc'],
       },
     },
 
-    /* Generate the images directory if it is missing */
+    /* Generate the build directory and js docs directory if it is missing */
     mkdir: {
       dev: {
         options: {
-          create: ['images', 'dist', 'doc']
+          create: ['dist', 'doc']
         },
       },
     },
+
+    /* Resize the images in the directory labelled resize */ 
     image_resize: {
       resize: {
         options: {
@@ -39,8 +41,9 @@ module.exports = function (grunt) {
         dest: 'dist/images/resized/',
       },
     },
-     /* Copy the "fixed" images that don't go through processing into the images/directory */
-     copy: {
+
+    /* Copy the "fixed" images that don't go through processing into the dist/images */
+    copy: {
       dev: {
         files: [{
           expand: true,
@@ -48,10 +51,12 @@ module.exports = function (grunt) {
           cwd: 'src/images/fixed/',
           dest: 'dist/images/'
         },
-       
-      ]
+
+        ]
       },
     },
+    
+    /* Make images responsive 1x and 2x also sm, md, lg size formats in the src/images directory output into  dist/images */
     responsive_images: {
       dev: {
         options: {
@@ -77,12 +82,13 @@ module.exports = function (grunt) {
             src: ['**/*.{jpg,png}'],
             cwd: 'dist/images/resized/',
             dest: 'dist/images/',
-            
+
           }
         ]
       }
     },
-//html
+
+    // Pug to html
     pug: {
       compile: {
         options: {
@@ -93,18 +99,17 @@ module.exports = function (grunt) {
         files: [{
           src: "**/*.pug",
           cwd: "src/views/pug_template/",
-                          
+
           dest: "src/views/html/",
           expand: true,
           ext: ".html"
-                        
+
 
         }]
       }
     },
 
-
-    // html logic
+    // Minify HTML
     htmlmin: {                                     // Task
       dist: {                                      // Target
         options: {                                 // Target options
@@ -113,7 +118,7 @@ module.exports = function (grunt) {
         },
         files: [{                                   // Dictionary of files
           'dist/index.html': 'src/views/index.html',     // 'destination': 'source'
-        },{
+        }, {
           src: "**/*.html",
           cwd: "src/views/html/",
           dest: "dist/pug/",
@@ -122,100 +127,102 @@ module.exports = function (grunt) {
       },
     },
 
-    // CSS element
-    // changes sass to css
+    // SASS to CSS
     sass: {
       options: {
-          sourceMap: true
+        sourceMap: true
       },
       dist: {
-          files: {
-              'src/css/foundation.css': 'src/sass/foundation/foundation.scss'
-          }
+        files: {
+          'src/css/foundation.css': 'src/sass/foundation/foundation.scss'
+        }
       }
     },
-  
+
+    // Order CSS by properties
     csscomb: {
       foo: {
-          files: [{
-            src: "**/*.css",
-            cwd: "src/css/",
-            dest: "dist/css/combed/",
-            expand: true,
-          }]
+        files: [{
+          src: "**/*.css",
+          cwd: "src/css/",
+          dest: "dist/css/combed/",
+          expand: true,
+        }]
       },
     },
-  // auto prefix and minify
-  postcss: {
-    options: {
-      map: {
+    // auto prefix and minify
+    postcss: {
+      options: {
+        map: {
           inline: false, // save all sourcemaps as separate files...
           annotation: 'dist/css/maps/' // ...to the specified directory
+        },
+
+        processors: [
+          require('pixrem')(), // add fallbacks for rem units
+          require('autoprefixer')({ browsers: 'last 4 versions' }), // add vendor prefixes
+          require('cssnano')() // minify the result
+        ]
       },
-
-      processors: [
-        require('pixrem')(), // add fallbacks for rem units
-        require('autoprefixer')({browsers: 'last 4 versions'}), // add vendor prefixes
-        require('cssnano')() // minify the result
-      ]
-    },
-    dist: {
-      src: "**/*.css",
-            cwd: "dist/css/combed/",
-            dest: "dist/css/",
-            expand: true,
-    }
-  },
-  csslint: {
-    strict: {
-      options: {
-        import: 2
-      },
-      src: ['dist/css/**/*.css']
-    },
-    lax: {
-      options: {
-        import: false
-      },
-      src: ['dist/css/**/*.css']
-    }
-  },
-
-  jshint: {
-    all: ['src/js/**/*.js']
-  },
-   // js
-   jsdoc : {
-    dist : {
-        src: ['src/js/*.js'],
-        options: {
-            destination: 'doc'
-        }
-    }
-  },
-  // merge the js files together
-  concat: {
-    options: {
-      separator: ';',
-    },
-    dist: {
-      src: ['src/js/*.js'],
-      dest: 'dist/js/main.js',
-    },
-  },
-
-
-
-    jasmine : {
-      src : 'src/js/jasmine/**/*.js',
-      options : {
-        specs : 'tests/spec/**/*.js'
+      dist: {
+        src: "**/*.css",
+        cwd: "dist/css/combed/",
+        dest: "dist/css/",
+        expand: true,
       }
     },
-    src: ['tests/mocha/spec/**/*.js'],
+    // Lint CSS
+    csslint: {
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['dist/css/**/*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['dist/css/**/*.css']
+      }
+    },
 
-     // Mocha
-     mochaTest: {
+    // JS hint
+    jshint: {
+      all: ['src/js/**/*.js']
+    },
+
+    // js documentation
+    jsdoc: {
+      dist: {
+        src: ['src/js/*.js'],
+        options: {
+          destination: 'doc'
+        }
+      }
+    },
+
+    // Combine all js files
+    concat: {
+      options: {
+        separator: ';',
+      },
+      dist: {
+        src: ['src/js/*.js'],
+        dest: 'dist/js/main.js',
+      },
+    },
+
+    // Jasmine Test suite
+    jasmine: {
+      src: 'src/js/jasmine/**/*.js',
+      options: {
+        specs: 'tests/jasmine/spec/**/*.js'
+      }
+    },
+
+    // Mocha Test Suite
+    mochaTest: {
       test: {
         options: {
           reporter: 'spec',
@@ -223,8 +230,16 @@ module.exports = function (grunt) {
         },
         src: ['tests/mocha/spec/feedreader.js'],
       },
-    }
-
+    },
+    watch: {
+      scripts: {
+        files: '**/*.scss',
+        tasks: ['sass'],
+        options: {
+          debounceDelay: 250,
+        },
+      },
+    },
   });
 
   // Grunt Dependencies
@@ -233,36 +248,37 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-image-resize');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // html logic
+  // html and pug Plugins
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-  // css
+  // css and sass plugins
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-csscomb');
-  //js
+  
+  // js plugins
   grunt.loadNpmTasks('grunt-jsdoc');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
 
-
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
+  // Test Plugins
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-mocha-test');
 
 
-  grunt.registerTask('build', 
+  // TASKS
+  grunt.registerTask('build',
     [
       'clean',
-      'mkdir', 
-      'copy', 
+      'mkdir',
+      'copy',
       'image_resize',
       'responsive_images',
       'pug',
@@ -274,25 +290,19 @@ module.exports = function (grunt) {
       //'jshint',
       'jsdoc',
       'concat',
-      
-]);
 
-grunt.registerTask('test', ['jasmine', 'mochaTest']);
+    ]);
+
+  grunt.registerTask('test', ['jasmine', 'mochaTest']);
 
 
-/*
-//need to sort out clean for this
-grunt.registerTask('style', ['clean', 'sass', 'csscomb', 'postcss', 'csslint'
-]);
-*/
-//https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
-// add 
-//https://www.npmjs.com/package/grunt-template-jasmine-nml
-//https://www.npmjs.com/package/grunt-jasmine-node-coverage
+  /*
+  //need to sort out clean for this
+  grunt.registerTask('style', ['clean', 'sass', 'csscomb', 'postcss', 'csslint'
+  ]);
+  */
+  //https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
 
-// need to install
-//https://www.npmjs.com/package/grunt-mocha-istanbul
-//https://www.npmjs.com/package/grunt-mocha-test
 
 };
 
