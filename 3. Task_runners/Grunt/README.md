@@ -50,7 +50,7 @@ npm start
 * Drop the page weight.
 
 
-![logo](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/browserimagefetch.png "didnt read")
+![logo](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/browserimagefetch.PNG "didnt read")
 
 
 ### What grunt uses
@@ -60,7 +60,7 @@ npm start
     3. grunt-contrib-copy
     4. grunt-contrib-watch
 - Grunt Responsive Images
-    1. grunt-responsive-images'
+    1. grunt-responsive-images
     2. grunt-image-resize
 - Grunt html
     1. grunt-contrib-pug
@@ -73,7 +73,7 @@ npm start
 - Grunt JS
     1. grunt-jsdoc
     2. grunt-contrib-jshint
-    3. grunt-contrib-uglify'
+    3. grunt-contrib-uglify
     4. grunt-contrib-concat
 - Grunt Test
     1. grunt-contrib-jasmine
@@ -92,5 +92,5 @@ Check the page with the Chrome Dev Tools:
 
 #### Future Improvements
 1. Make more responsive image types for 4k support
-2. Use WEB p
+2. Use WEB P format
 3. Use img srcset attribute
