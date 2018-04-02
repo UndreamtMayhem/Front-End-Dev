@@ -1,8 +1,9 @@
 # 3. Task Runners
   - Grunt
-  - Gulp TODO
+  - Gulp 
 
 ## What's in the template
+
 ### Grunt
 - Grunt Tasks
     1. grunt-contrib-clean
@@ -28,3 +29,39 @@
 - Grunt Test
     1. grunt-contrib-jasmine
     2. grunt-mocha-test
+
+### Gulp
+- HTML Task 
+  1. pug 
+  2. htmlhint
+  3. html minify
+  4. build html
+
+- HTML-validate Task
+  1. HTML HINT
+
+- Style Task
+  1. Sass to CSS
+  2. autoprefixer from browser specific
+  3. CSS comb
+  4. CSS lint
+  5. CSS Minify
+  6. Build CSS
+
+- Images responsive Task
+  1. gulp-imagemin
+    - gifsicle
+    - jpegtran
+    - optipng
+    - svgo 
+
+- Documentation Task 
+  1. gulp-jsdoc3
+
+- Compress js Task
+  1. gulp-uglify
+
+- Minify and Concat Js
+  1.  sourcemaps
+  2.  concat app.min.js
+  3.  Build build/js
