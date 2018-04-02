@@ -1,28 +1,43 @@
-# Grunt Module loader
+# Grunt Task Runner 
 
 ## Running
+Install node and grunt dependencies
+
 ```
 npm init
 ```
+
+Lint CSS 
 
 ```
 grunt csslint
 ```
 
+Build the project
+- css
+- images
+- js
+- pug
+- index.html [Entry point]
+
 ```
 grunt build
 ```
+
+Watch Sass files
 
 ```
 grunt watch
 ```
 
+Start the express server to deliver responsive images
+
 ```
 npm start
 ```
 
-Inline-style: 
-![alt text](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/src/images/sfo.jpg "didnt read")
+Home Page: 
+![alt text](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/home.png "didnt read")
 
 ## Udacity Responsive Images: Project
 
