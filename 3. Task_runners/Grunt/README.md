@@ -36,8 +36,9 @@ Start the express server to deliver responsive images
 npm start
 ```
 
-Home Page: 
-![alt text](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/home.png "didnt read")
+### Home Page: 
+
+![logo](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/home.png "didnt read")
 
 ## Udacity Responsive Images: Project
 
@@ -47,6 +48,10 @@ Home Page:
 * Make the images fit in their containers in the viewport.
 * Restrain the width of the blog.
 * Drop the page weight.
+
+
+![logo](https://github.com/UndreamtMayhem/Front-End-Dev/blob/task_runners/3.%20Task_runners/Grunt/resources/browserimagefetch.png "didnt read")
+
 
 ### what it uses
 
