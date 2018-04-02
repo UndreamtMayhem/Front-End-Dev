@@ -267,9 +267,9 @@ venv.bak/
 /site
 
 
-
 # mypy
 
 .mypy_cache/
+
 
 node_modules/

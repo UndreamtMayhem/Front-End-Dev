@@ -1,63 +1,17 @@
-# Gulp TODO
+# Gulp Task Runner
 
-Whats included
-- HTML Task 
-  - pug 
-  - htmlhint
-  - html minify
-  - build html
-  ```
-  gulp build-html
-  ```
-- HTML-validate Task
-  - HTML HINT
-  ```
-  gulp html-validate
-  ```
-- Style Task
-  - Sass to CSS
-  - autoprefixer from browser specific
-  - CSS comb
-  - CSS lint
-  - CSS Minify
-  - Build CSS
-  ```
-  gulp style
-  ```
+## Running
 
-- Images responsive Task
-  - gulp-imagemin
-    - gifsicle
-    - jpegtran
-    - optipng
-    - svgo 
-  ```
-  gulp imagemin
-  ```
+### Install node and grunt dependencies
+```
+npm init
+```
 
-- Documentation Task 
-  - gulp-jsdoc3
-  ```
-  gulp doc
-  ```
+### Build project
+```
+gulp build
 
-- Compress js Task
-  - gulp-uglify
-  ```
-  gulp compress
-  ```
-
-- Minify and Concat Js
-  -  sourcemaps
-  -  concat app.min.js
-  -  Build build/js
-  ```
-  gulp js
-  ```
-
-
-
-## building
+```
 - Build Task
   - 'html',
   - 'html-validate',
@@ -67,32 +21,89 @@ Whats included
   - 'compress',
   - 'js',
 
-```
-gulp build
-
-```
-
-## Running tests
-- Tests Task
-  - gulp-jasmine
-  - gulp-mocha
+### Running tests
 ```
 gulp test
 
 ```
+- Tests Task
+  - gulp-jasmine
+  - gulp-mocha
 
-## Watching SCSS files
+### Watching SCSS files
 
 ```
 gulp watch
 
 ```
 
+### Build Html files
 
-### Development
+```
+gulp build-html
+```
 
-- Todo 
+Whats included
+- HTML Task 
+  - pug 
+  - htmlhint
+  - html minify
+  - build html
+ 
+### Validate HTML
+```
+gulp html-validate
+```
+- HTML-validate Task
+  - HTML HINT
 
-### Production
+### Build Style
 
-- Todo 
+```
+gulp style
+```
+- Style Task
+  - Sass to CSS
+  - autoprefixer from browser specific
+  - CSS comb
+  - CSS lint
+  - CSS Minify
+  - Build CSS
+
+### Minify Images
+```
+gulp imagemin
+```
+
+- Images responsive Task
+  - gulp-imagemin
+    - gifsicle
+    - jpegtran
+    - optipng
+    - svgo 
+
+### Build JS docs
+```
+gulp doc
+```
+
+- Documentation Task 
+  - gulp-jsdoc3
+
+
+### Compress JS
+
+- Compress js Task
+  - gulp-uglify
+  ```
+  gulp compress
+  ```
+
+### Minify JS
+- Minify and Concat Js
+  -  sourcemaps
+  -  concat app.min.js
+  -  Build build/js
+  ```
+  gulp js
+  ```
