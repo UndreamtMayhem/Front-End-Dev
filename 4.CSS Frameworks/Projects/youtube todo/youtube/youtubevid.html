@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../public/materialize-css/dist/css/materialize.min.css" media="screen,projection"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body,
+        .card {
+            background-color: #131313;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        nav {
+            background-color: #232323!important;
+        }
+
+        main {
+            padding-top: 1.5rem;
+        }
+
+        .p-0 {
+            padding: 0rem 0.75rem!important;
+        }
+
+        #main-content {
+            padding: 0 2rem;
+        }
+
+        .float-l {
+            float: left;
+        }
+
+        .float-r {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .card-video {
+            padding-bottom: 0.5rem!important;
+        }
+
+        .video-content {
+            padding: 0rem!important;
+        }
+
+        .video-title {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+        }
+
+        .views {
+            color: #717E83;
+            font-size: 1rem;
+        }
+
+        .video-stats i {
+            padding: 0 10px;
+        }
+
+        .card-video-profile {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+
+        .profile {
+            align-items: center;
+            display: flex;
+        }
+
+        .profile-info {
+            padding-left: 1rem;
+        }
+
+        .profile-info p {
+            margin: 0rem;
+        }
+
+        .video-text p {
+            margin-top: 0rem;
+        }
+
+        .video-action {
+            padding: 0!important;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .comment-content {
+            padding: 1rem 0rem !important;
+        }
+
+        .comment-text {
+            padding-left: 10px;
+        }
+
+        .comment-text p {
+            margin: 0rem;
+        }
+
+        .reply {
+            padding: 0.5rem 0;
+        }
+
+        .reply a,
+        .reply a span {
+            padding-right: 1.5rem;
+        }
+
+        .reply a span {
+            padding-left: 1.5rem;
+        }
+
+
+        .label {
+            font-size: 0.8rem;
+            padding-right: 0.5rem;
+        }
+
+        .card-video-suggestion {
+            color: white!important;
+            font-size: 1rem!important;
+            font-weight: 500!important;
+            line-height: 1.6rem!important;
+            margin: 0 0 2px 0!important;
+            overflow: hidden;
+        }
+
+        .card-additional-text {
+            color: #717E83;
+            font-size: 0.85rem;
+        }
+
+        .card-image {
+            padding-bottom: 20px;
+        }
+
+        .first-card {
+            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="left">
+                <li>
+                    <a href="#!" class="">Logo</a>
+                </li>
+                <li>
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search" style="top:-8px">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="#">
+                        <i class="large material-icons">file_upload</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="large material-icons">dashboard</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="large material-icons">notifications</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SIGN IN
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+                <a class="subheader">Social</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">person_pin</i>Home</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">group</i>Trending</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader">LIBRARY</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">history</i>History</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">watch_later</i>Watch Later</a>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">thumb_up</i>Liked videos</a>
+            </li>
+            <li>
+                <a class="subheader">SUBSCRIPTIONS</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="#!">
+                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">Title</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="row" id="main-content">
+            <div class="col s12 l7">
+                <div class="card">
+                    <div class="card-image card-video">
+                        <img src="https://placeimg.com/640/480/any" height="350px">
+                    </div>
+                    <div class="video-content">
+                        <span class="video-title">
+                            The Weeknd - False Alarm
+                        </span>
+                        <span class="views">317,204 views</span>
+                        <div class="right video-stats">
+                            <span>
+                                <i class="tiny material-icons">thumb_up</i> 70k</span>
+                            <span>
+                                <i class="tiny material-icons">thumb_down</i>2k</a>
+                            </span>
+                            <span>
+                                <i class="tiny material-icons">share</i>SHARE</span>
+                            <i class="tiny material-icons">playlist_add</i>
+                            <i class="tiny material-icons">thumb_down</i>2k</a>
+                            <i class="tiny material-icons">more_horiz</i>
+                        </div>
+                    </div>
+                    <div class="card-video-profile">
+                        <div class="profile">
+                            <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:42px; height:42px;">
+                            <div class="profile-info">
+                                <p>
+                                    <a href="#">TheWeekndVEVO</a>
+                                </p>
+                                <p>Published on Feb 1, 2018</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a class="waves-effect waves-light btn">SUBSCRIBE 277K</a>
+                        </div>
+                    </div>
+                    <div class="video-content video-text">
+                        <p>8 Bit version of Say Something, a tribute to Justin Timberlake Get this track on Bandcamp - https://tinyurl.com/SaySomething8BIT
+                            *DO NOT USE 8BU CONTENT WITHOUT PERMISSION* </p>
+                        <p class="grey-text">SHOW MORE</p>
+                    </div>
+                    <div class="card-action video-action">
+                        <a href="#">2,340 Comments</a>
+                        <a href="#">
+                            <i class="material-icons">sort</i> SORT BY</a>
+                    </div>
+
+                    <section id="comments">
+                        <div class="comment-container">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:42px; height:42px;">
+                                    <div class="comment-text">
+                                        <p>
+                                            <a href="#">PVZ Zone </a>
+                                            <span class="grey-text">3 months ago</span>
+                                        </p>
+                                        <p>This is a good shit, Loving it, Now I want eat, Now I'm eating,</p>
+
+                                        <div class="reply">
+                                            <a href="#">REPLY
+                                                <span>90</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="tiny material-icons">thumb_up</i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="tiny material-icons">thumb_down</i>
+                                            </a>
+                                        </div>
+                                        <div class="c">
+                                            View all 3 replies
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-container">
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:42px; height:42px;">
+                                        <div class="comment-text">
+                                            <p>
+                                                <a href="#">PVZ Zone </a>
+                                                <span class="grey-text">3 months ago</span>
+                                            </p>
+                                            <p>This is a good shit, Loving it, Now I want eat, Now I'm eating,</p>
+    
+                                            <div class="reply">
+                                                <a href="#">REPLY
+                                                    <span>90</span>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="tiny material-icons">thumb_up</i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="tiny material-icons">thumb_down</i>
+                                                </a>
+                                            </div>
+                                            <div class="c">
+                                                View all 3 replies
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <h6 class="float-l">Up next</h6>
+                <div class="float-r">
+                    <div class="switch">
+                        <span class="label">AUTOPLAY</span>
+                        <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                        </label>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="card horizontal first-card">
+                    <div class="card-image">
+                        <img src="https://placeimg.com/540/320/any" alt="" class="" style="width:168px;">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content p-0">
+                            <span class="card-video-suggestion activator">Card Title
+                            </span>
+                            <div class="card-additional-text">
+                                <p>Username
+                                    <i class="tiny material-icons">verified_user</i>
+                                </p>
+                                <p>2.4M views</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="https://placeimg.com/540/320/any" alt="" class="" style="width:168px;">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content p-0">
+                            <span class="card-video-suggestion activator">Card Title
+                            </span>
+                            <div class="card-additional-text">
+
+
+                                <p>Username
+                                    <i class="tiny material-icons">verified_user</i>
+                                </p>
+                                <p>2.4M views</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </section>
+    </main>
+    <!--
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2018 Copyright Text
+            </div>
+        </div>
+    </footer>
+-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/materialize-css/dist/js/materialize.min.js"></script>
+    <script>
+        // search icon 
+        // margin -7px
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+            $('select').material_select();
+
+        })
+    </script>
+</body>
+
+</html>

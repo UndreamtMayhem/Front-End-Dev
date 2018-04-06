@@ -1,0 +1,116 @@
+body,
+body.pushable>.pusher,
+.card {
+    background-color: #1C1C1C;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    background-color: #232323!important;
+}
+
+.side-nav {
+    top: 64px;
+}
+
+.side-nav li a {
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+
+.side-nav li a i {
+    color: white!important;
+    margin: 0 1rem!important;
+}
+
+.subheader {
+    color: #888888!important;
+    font-size: 0.9rem!important;
+}
+
+.header {
+    padding: 0.5em 0;
+}
+
+.subscription {
+    display: flex!important;
+    align-items: center
+}
+
+.subscription img {
+    margin-right: 0.75rem;
+}
+
+
+/* first page */
+
+.suggestion-title {
+    font-size: 1rem;
+}
+
+.suggestion-details {
+    color: #888888;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.suggestion-details a {
+    color: #888888;
+}
+
+.suggestion-details p {
+    margin: 0px;
+}
+
+.ui.card .video-image {
+    border-radius: 0px!important;
+}
+
+.video-suggestion-content {
+    padding: 0px;
+}
+
+.card-video {
+    box-shadow: none!important;
+    padding: 10px;
+}
+
+.video-suggestion-container {
+    margin: 1em 0;
+    padding: 0 0.2rem!important;
+}
+
+#recommended {
+    border-bottom: 1px solid darkgrey;
+    margin: 0 1rem;
+}
+
+
+/* end of first page */
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+}

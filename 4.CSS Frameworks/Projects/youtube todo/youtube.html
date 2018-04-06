@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        header,
+        main,
+        footer {
+            padding-left: 220px;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer {
+                padding-left: 0;
+            }
+        }
+        
+        body,
+        .card {
+            background-color: #131313;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #232323!important;
+        }
+        
+        .side-nav {
+            background-color: #1C1C1C;
+            top: 64px;
+        }
+        
+        .side-nav li a {
+            color: #ffffff;
+            font-size: 0.8rem;
+            padding: 0 1rem;
+        }
+        
+        .side-nav li a i {
+            color: white!important;
+            margin: 0 1rem!important;
+        }
+        
+        .subheader {
+            color: #888888!important;
+            font-size: 0.9rem!important;
+        }
+        
+        .subscription {
+            display: flex!important;
+            align-items: center
+        }
+        
+        .subscription img {
+            margin-right: 0.75rem;
+        }
+        /* first page */
+        
+        .suggestion-title {
+            font-size: 1rem;
+        }
+        
+        .suggestion-details {
+            color: #888888;
+            font-size: 0.8rem;
+            padding-top: 0.5rem;
+        }
+        
+        .suggestion-details a {
+            color: #888888;
+        }
+        
+        .suggestion-details p {
+            margin: 0px;
+        }
+        
+        .video-image {
+            padding: 0 0 0.5rem 0!important;
+        }
+        
+        .video-suggestion-content {
+            padding: 0px;
+        }
+        
+        .card-video {
+            box-shadow: none!important;
+        }
+        
+        .video-suggestion-container {
+            padding: 0 0.2rem!important;
+        }
+        
+        #recommended {
+            border-bottom: 1px solid darkgrey;
+            margin: 0 1rem;
+        }
+        /* end of first page */
+        
+        main {
+            padding-top: 1.5rem;
+        }
+        
+        .p-0 {
+            padding: 0rem 0.75rem!important;
+        }
+        
+        #main-content {
+            padding: 0 2rem;
+        }
+        
+        .float-l {
+            float: left;
+        }
+        
+        .float-r {
+            float: right;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .inline {
+            display: inline;
+        }
+        
+        .card-video {
+            padding-bottom: 0.5rem!important;
+        }
+        
+        .video-content {
+            padding: 0rem!important;
+        }
+        
+        .video-title {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+        }
+        
+        .views {
+            color: #717E83;
+            font-size: 1rem;
+        }
+        
+        .video-stats i {
+            padding: 0 10px;
+        }
+        
+        .card-video-profile {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+        
+        .profile {
+            align-items: center;
+            display: flex;
+        }
+        
+        .profile-info {
+            padding-left: 1rem;
+        }
+        
+        .profile-info p {
+            margin: 0rem;
+        }
+        
+        .video-text p {
+            margin-top: 0rem;
+        }
+        
+        .video-action {
+            padding: 0!important;
+        }
+        
+        .comment-header {
+            display: flex;
+            align-items: center;
+        }
+        
+        .comment-content {
+            padding: 1rem 0rem !important;
+        }
+        
+        .comment-text {
+            padding-left: 10px;
+        }
+        
+        .comment-text p {
+            margin: 0rem;
+        }
+        
+        .reply {
+            padding: 0.5rem 0;
+        }
+        
+        .reply a,
+        .reply a span {
+            padding-right: 1.5rem;
+        }
+        
+        .reply a span {
+            padding-left: 1.5rem;
+        }
+        
+        .label {
+            font-size: 0.8rem;
+            padding-right: 0.5rem;
+        }
+        
+        .card-video-suggestion {
+            color: white!important;
+            font-size: 1rem!important;
+            font-weight: 500!important;
+            line-height: 1.6rem!important;
+            margin: 0 0 2px 0!important;
+            overflow: hidden;
+        }
+        
+        .card-additional-text {
+            color: #717E83;
+            font-size: 0.85rem;
+        }
+        
+        .card-image {
+            padding-bottom: 20px;
+        }
+        
+        .first-card {
+            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+        }
+    </style>
+</head>
+
+<body class="pushable">
+
+    <div class="ui left vertical visible sidebar menu">
+        <a class="item">
+                    Home
+                <i class="home icon"></i> 
+            </a>
+        <a class="item">
+            <i class="user layout icon"></i> Trending
+        </a>
+        <a class="item">
+            <h4>LIBRARY</h4>
+        </a>
+        <a class="item">
+            <i class="history icon"></i> History
+        </a>
+        <a class="item">
+            <i class="clock icon"></i> Watch Later
+        </a>
+        <a class="item">
+            <i class="thumbs up outline icon"></i> Liked videos
+        </a>
+        <a class="item">
+            <h4>SUBSCRIPTIONS</h4>
+        </a>
+        <div class="item">
+            <img class="ui avatar image" src="http://via.placeholder.com/350x150">
+            <a class="header">Rachel</a>
+        </div>
+
+    </div>
+    <div class="pusher">
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <a class="header item" href="#">
+                    <img class="logo" src="assets/images/logo.png"> Project Name
+                </a>
+                <a class="item" href="#">Home</a>
+                <div class="ui simple dropdown item">
+                    Dropdown <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                        <div class="divider"></div>
+                        <div class="header">Header Item</div>
+                        <div class="item">
+                            <i class="dropdown icon"></i> Sub Menu
+                            <div class="menu">
+                                <a class="item" href="#">Link Item</a>
+                                <a class="item" href="#">Link Item</a>
+                            </div>
+                        </div>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="row">
+
+
+            <ul class="side-nav fixed" id="mobile-demo">
+
+                <li>
+                    <a class="subheader">LIBRARY</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="tiny material-icons">history</i>History</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="tiny material-icons">watch_later</i>Watch Later</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="tiny material-icons">thumb_up</i>Liked videos</a>
+                </li>
+                <li>
+                    <a class="subheader">SUBSCRIPTIONS</a>
+                </li>
+                <li class="collection-item avatar">
+                    <a href="#!" class="subscription">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">
+                        <span>Title</span>
+                    </a>
+                </li>
+                <li class="collection-item avatar">
+                    <a href="#!" class="subscription">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle" style="width:35px; height:35px;">
+                        <span>Title</span>
+                    </a>
+                </li>
+            </ul>
+            <section id="recommended">
+                <div class="row">
+                    <h6 class="col s12">Recommended</h6>
+                </div>
+                <div class="row">
+                    <div class="video-suggestion-container col s12 m6 l3">
+                        <div class="card card-video">
+                            <div class="card-image video-image">
+                                <img src="https://placeimg.com/640/480/any" height="150">
+                            </div>
+                            <div class="video-suggestion-content">
+                                <span class="suggestion-title">The Weeknd - False Alarm
+        
+                                    </span>
+                                <div class="suggestion-details">
+                                    <a href="#">TheWeekndVEVO</a>
+                                    <p>80M views
+                                        <span>1 year ago</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content col'>
+                                <li>Not interested</li>
+                                <li>Add to Watch later</li>
+                                <li>Add to playlist</li>
+                                <li>Report</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="video-suggestion-container col s12 m6 l3">
+                        <div class="card card-video">
+                            <div class="card-image video-image">
+                                <img src="https://placeimg.com/640/480/any" height="150">
+                            </div>
+                            <div class="video-suggestion-content">
+                                <span class="suggestion-title">The Weeknd - False Alarm
+        
+                                    </span>
+                                <div class="suggestion-details">
+                                    <a href="#">TheWeekndVEVO</a>
+                                    <p>80M views
+                                        <span>1 year ago</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content col'>
+                                <li>Not interested</li>
+                                <li>Add to Watch later</li>
+                                <li>Add to playlist</li>
+                                <li>Report</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="video-suggestion-container col s12 m6 l3">
+                        <div class="card card-video">
+                            <div class="card-image video-image">
+                                <img src="https://placeimg.com/640/480/any" height="150">
+                            </div>
+                            <div class="video-suggestion-content">
+                                <span class="suggestion-title">The Weeknd - False Alarm
+        
+                                    </span>
+                                <div class="suggestion-details">
+                                    <a href="#">TheWeekndVEVO</a>
+                                    <p>80M views
+                                        <span>1 year ago</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content col'>
+                                <li>Not interested</li>
+                                <li>Add to Watch later</li>
+                                <li>Add to playlist</li>
+                                <li>Report</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="video-suggestion-container col s12 m6 l3">
+                        <div class="card card-video">
+                            <div class="card-image video-image">
+                                <img src="https://placeimg.com/640/480/any" height="150">
+                            </div>
+                            <div class="video-suggestion-content">
+                                <span class="suggestion-title">The Weeknd - False Alarm
+        
+                                    </span>
+                                <div class="suggestion-details">
+                                    <a href="#">TheWeekndVEVO</a>
+                                    <p>80M views
+                                        <span>1 year ago</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content col'>
+                                <li>Not interested</li>
+                                <li>Add to Watch later</li>
+                                <li>Add to playlist</li>
+                                <li>Report</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="video-suggestion-container col s12 m6 l3">
+                        <div class="card card-video">
+                            <div class="card-image video-image">
+                                <img src="https://placeimg.com/640/480/any" height="150">
+                            </div>
+                            <div class="video-suggestion-content">
+                                <span class="suggestion-title">The Weeknd - False Alarm
+        
+                                    </span>
+                                <div class="suggestion-details">
+                                    <a href="#">TheWeekndVEVO</a>
+                                    <p>80M views
+                                        <span>1 year ago</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content col'>
+                                <li>Not interested</li>
+                                <li>Add to Watch later</li>
+                                <li>Add to playlist</li>
+                                <li>Report</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container center-align">
+                    © 2018 Copyright Text
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./semantic/dist/semantic.min.js"></script>
+
+</body>
+
+</html>
