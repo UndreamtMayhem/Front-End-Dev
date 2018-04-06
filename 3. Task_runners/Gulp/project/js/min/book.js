@@ -1,1 +1,0 @@
-function Book(o,n){}function Thingy(){}globalNS.method1=function(o,n){return n/o},Shoe.prototype.setColor=function(o){};

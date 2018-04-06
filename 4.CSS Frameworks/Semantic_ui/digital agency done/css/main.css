@@ -1,0 +1,117 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+.jumbotron {
+    padding: 4rem 0 0 0;
+    height: 100vh;
+    background: url(../img/intro-bg.jpg) bottom center no-repeat #333;
+    background-size: cover;
+}
+
+.jumbotron-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 3.5em 0.5em;
+    padding: 1.5em;
+}
+
+.jumbotron .content {
+    height: 80vh;
+}
+
+.brand-heading {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.intro-text {
+    font-size: 25px;
+}
+
+.content-section {
+    padding: 1.5em 0;
+}
+
+.content-section .status {
+    padding: 1.5em;
+}
+
+.who-section {
+    background: url(../img/downloads-bg.jpg) center center no-repeat #333;
+    background-size: cover;
+    color: white;
+    padding: 7.5em 1.5em;
+    margin: 2.5rem 0;
+}
+
+.who-section .grid {
+    padding: 1.5em;
+}
+
+.contact {
+    color: white;
+    padding: 4rem;
+}
+
+.contact .social-buttons {
+    padding: 1.5em 0;
+}
+
+footer {
+    background-color: #6c757d;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+}
+
+nav .toc.item {
+    color: white !important;
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+}

@@ -1,0 +1,131 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.3.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.summary-panel, #addtional-info, footer {
+  color: white;
+  text-shadow: 1px 1px  #000000; }
+
+.summary {
+  padding-top: 10px; }
+  .summary .location {
+    font-size: 1.4em; }
+  .summary .current-temperature {
+    font-size: 2.5em; }
+  .summary .active-temp {
+    font-size: 29px;
+    top: auto;
+    bottom: 4px;
+    position: relative; }
+  .summary .temperature-type {
+    top: auto;
+    bottom: 16px;
+    position: relative; }
+
+.temperature {
+  top: auto;
+  bottom: 16px;
+  position: relative; }
+  .temperature .wi-degrees {
+    font-size: 50px;
+    color: white; }
+
+.weather-addtional {
+  top: auto;
+  bottom: 20px;
+  position: relative; }
+
+.weather-type {
+  font-size: 30px; }
+
+.addtional-info .wi-barometer, .addtional-info .wi-humidity {
+  font-size: 15px; }
+
+.addtional-info .wi-direction-up {
+  font-size: 20px; }
+
+.stats-item span {
+  padding-left: 5px; }
+
+.stats-item .wi-barometer, .stats-item .wi-humidity, .stats-item .wi-direction-up {
+  padding: 0 10px; }
+
+.wi {
+  color: yellow; }
+
+li {
+  list-style-type: none; }
+
+.temperature-unit {
+  font-size: 50px; }
+
+.wi-cloud {
+  padding: 0 7px; }
+
+.daily-panel {
+  color: white;
+  text-shadow: 1px 1px #000000; }
+
+.daily .day, .daily .current-day {
+  color: white; }
+
+.daily .date {
+  padding: 10px; }
+
+.daily .card {
+  padding: 20px;
+  box-shadow: 10px 10px 5px #888888; }
+  .daily .card .temperature-max {
+    font-size: 30px; }
+  .daily .card .temperature-min {
+    font-size: 19px; }
+
+.triangle-bottom {
+  position: relative; }
+  .triangle-bottom:after {
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    margin-left: -50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px rgba(255, 255, 255, 0.2);
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent; }
+
+.wi {
+  padding-left: 15px; }
+
+.hourly-panel {
+  color: white;
+  text-shadow: 1px 1px #000000; }
+
+.hourly {
+  text-align: center; }
+  .hourly .hour-card {
+    margin-right: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px; }
+  .hourly .hour {
+    padding: 10px 10px 0 10px; }
+  .hourly .temperature {
+    font-size: 30px; }
+  .hourly .info {
+    top: auto;
+    bottom: 20px;
+    position: relative; }
+
+.modal-title {
+  color: black; }
+
+p {
+  color: black;
+  padding: 10px;
+  z-index: 400; }
+
+/*# sourceMappingURL=foundation.css.map */
