@@ -1,0 +1,94 @@
+:root {
+    --body-bg-color: #0069c5;
+    --blue-light: #1692ff;
+    --dark-blue: #0069c5;
+}
+
+.bar {
+    width: 65% !important;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+header {
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 30px 0px !important;
+}
+
+header p {
+    margin-top: 0px !important;
+}
+
+.contact {
+    margin: 0rem 0.5rem !important;
+}
+
+.education,
+.projects,
+.services,
+.skills {
+    margin: 0.75rem 0.5rem;
+}
+
+.ui.progress {
+    margin: 1em 0 1.5em !important;
+}
+
+.cards .card {
+    min-width: 97%;
+    max-width: 100% !important;
+}
+
+.profile-img {
+    border-radius: 50%;
+    display: block;
+    margin: -90px auto 0 auto;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.portfolio-container {
+    margin-top: 7.5rem;
+    margin-bottom: 2rem;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projects img {
+    padding: 20px;
+}
+
+footer {
+    margin: 0px !important;
+}
+
+.light-blue {
+    background-color: var(--blue-light);
+    border-color: #c5e4ff;
+    color: white;
+}
+
+.dark-blue {
+    background-color: var(--dark-blue);
+    border-color: #c5e4ff;
+    color: white;
+}
+
+.fa-icon {
+    color: #0074d9;
+    font-size: 1.4rem;
+    padding: 10px 12px;
+}
+
+.fa-facebook {
+    padding: 10px 15px;
+}
