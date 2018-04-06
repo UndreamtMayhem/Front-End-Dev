@@ -1,0 +1,66 @@
+nav {
+    background-color: #16897a;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px!important;
+}
+
+.app-btn {
+    max-width: 150px;
+}
+
+.app-btn.google {
+    max-width: 120px;
+}
+
+.side.image {
+    width: 300px;
+    padding: 0.5em;
+}
+
+.call-to-action,
+.section {
+    height: 100vh;
+}
+
+.call-to-action {
+    background: #1b222a url('../img/site_showcase_bg.jpg') no-repeat top center;
+    background-size: cover;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.call-to-action .title {
+    font-size: 3rem;
+}
+
+.call-to-action .em-text {
+    color: #1caa98;
+}
+
+.transparent-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5em;
+}
+
+.fa-camera {
+    font-size: 8rem!important;
+}
+
+.img-thumbnail {
+    height: 250px !important;
+}
+
+#middle,
+#feature {
+    padding: 2.5em 0;
+}
+
+#feature {
+    background-color: #1caa98;
+    color: white;
+}
+
+footer {
+    background-color: #0e564c!important;
+}
