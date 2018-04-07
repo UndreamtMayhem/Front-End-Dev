@@ -1,0 +1,11 @@
+.login-container {
+    @include flex-prefixes;
+    justify-content: center;
+}
+.login-block {
+    padding: 0.2rem 1.25rem ;
+}
+.alt-form-caption{
+    margin-bottom: 0px;
+    text-align: center;
+}

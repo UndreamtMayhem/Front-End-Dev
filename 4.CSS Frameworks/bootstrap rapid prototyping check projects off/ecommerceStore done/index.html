@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce Template</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="container">
+        <header class="navbar-light py-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 align-self-end">
+                    <h1 class="ml-1 logo">
+                        <i class="fa fa-tags text-primary"></i> My
+                        <span class="text-primary">Store</span>
+                    </h1>
+                    <p class="ml-5 subtext">Bootstrap Ecommerce Template</p>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 align-self-center ">
+                    <form class="search-form rounded px-3 py-2">
+                        <div class="row">
+                            <div class="form-group col-sm-4 my-2">
+                                <input type="email" class="form-control" placeholder="Enter Email...">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="row">
+                                    <div class="form-group col-sm-8 my-2">
+                                        <input type="password" class="form-control" placeholder="Enter Password...">
+                                    </div>
+                                    <div class="col-sm-4 my-2">
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark mb-3">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="navbarSupportedContent" class="navbar-collapse collapse justify-content-between">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Whats New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <form class="form-inline">
+                            <div class="form-group mx-2">
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron py-0 px-3">
+            <div class="row">
+                <ul class="nav nav-tabs flex-column col-lg-3 px-0" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="true">Featured Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="best-tab" data-toggle="tab" href="#best" role="tab" aria-controls="best" aria-selected="false">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="discount-tab" data-toggle="tab" href="#discount" role="tab" aria-controls="discount" aria-selected="false">Summer Discount</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="false">Premium Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="gift-tab" data-toggle="tab" href="#gift" role="tab" aria-controls="gift" aria-selected="false">Gift Idea</a>
+                    </li>
+                </ul>
+                <div class="tab-content col-md-12 col-lg-9 text-white" id="myTabContent">
+                    <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                        <div class="row">
+                            <div class="tab-text col-sm-12 col-md-6 col-lg-6">
+                                <h2>Apple iPhone 6</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare dolor. Vivamus malesuada auctor est id aliquet. Morbi rutrum lectus sit amet purus pulvinar vehicula</p>
+                                <a href="product.html" class="btn btn-dark">View</a>
+                            </div>
+                            <img class="col-sm-6 col-md-6 col-lg-6 p-2" src="img/iphone-6.jpg">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab">
+                        <div class="row">
+                            <div class="tab-text col-sm-12 col-md-6 col-lg-6">
+                                <h2>PS4</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare dolor. Vivamus malesuada auctor est id aliquet. Morbi rutrum lectus sit amet purus pulvinar vehicula</p>
+                                <a href="product.html" class="btn btn-dark">View</a>
+                            </div>
+                            <img class="col-sm-6 col-lg-6 p-2" src="img/ps4.png">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="discount" role="tabpanel" aria-labelledby="discount-tab">
+                        <div class="row">
+                            <div class="tab-text col-sm-12 col-md-6 col-lg-6">
+                                <h2>Xbox One</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare dolor. Vivamus malesuada auctor est id aliquet. Morbi rutrum lectus sit amet purus pulvinar vehicula</p>
+                                <a href="product.html" class="btn btn-dark">View</a>
+                            </div>
+                            <img class="col-sm-6 col-lg-6 p-2" src="img/xbox.png">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                        <div class="row">
+                            <div class="tab-text col-sm-12 col-md-6 col-lg-6">
+                                <h2>Apple Macbook</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare dolor. Vivamus malesuada auctor est id aliquet. Morbi rutrum lectus sit amet purus pulvinar vehicula</p>
+                                <a href="product.html" class="btn btn-dark">View</a>
+                            </div>
+                            <img class="col-sm-6 col-lg-6 p-2" src="img/macbook.png">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="gift" role="tabpanel" aria-labelledby="gift-tab">
+                        <div class="row">
+                            <div class="tab-text col-sm-12 col-md-6 col-lg-6">
+                                <h2>Apple iMac</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ornare dolor. Vivamus malesuada auctor est id aliquet. Morbi rutrum lectus sit amet purus pulvinar vehicula</p>
+                                <a href="product.html" class="btn btn-dark">View</a>
+                            </div>
+                            <img class="col-sm-6 col-lg-6 p-2" src="img/imac.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="products">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/canon_camera.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $699.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Samsung Galaxy S5</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/xbox-one.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $399.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Xbox One</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/ps4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $699.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Playstation 4</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/s7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $699.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Samsung Galaxy S6</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-danger disabled">Out of stock</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/imac.png" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $599.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Iphone 6</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="item rounded mx-auto d-block" src="img/macbook.png" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="caption">
+                                <div class="caption-top">
+                                    <h5 class="float-right badge-success p-1">
+                                        $399.99
+                                    </h5>
+                                    <h5>
+                                        <a href="product.html">Apple Macbook</a>
+                                    </h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim</p>
+                                <a href="product.html" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="ratings">
+                                <p class="float-right">15 Reviews</p>
+                                <p>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                    <span class="far fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="navbar text-white justify-content-center">
+        <p>MyStore Copyright &copy; 2018 -
+            <a class="text-white" href="#">Terms</a> &middot;
+            <a class="text-white" href="#">Privacy</a>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+
+</html>

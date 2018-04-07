@@ -1,0 +1,96 @@
+// card container
+.card-deck {
+    justify-content: center;
+}
+
+//reset default card style
+.card-deck :not(:last-child).card {
+    margin: 0px;
+}
+
+.card-deck :not(:first-child).card {
+    margin: 0px;
+}
+
+// Main container for a card about an event
+.card-event {
+    max-width: 300px;
+    min-width: 300px;
+}
+.card-event, .card-login {
+    margin-right: 10px!important;
+    margin-bottom: 10px!important;
+ // Header for the card
+    .card-header {
+        background-color: transparent;
+        border-bottom: 1px solid #e8e8e8;
+        @include flex-prefixes;
+        padding: 6px 10px 2px;
+        .user-avatar {
+            border-radius: 50%;
+            height: 25px;
+            max-width: 100%;
+            width: 25px;
+        }
+        .user-info {
+            padding-left: 15px;
+            width: 100%;
+            .event-title {
+                padding-top: 5px;
+                i {
+                    color: #636c72;
+                    float: right;
+                }
+            }
+        }
+    } // card info banner
+    .card-banner {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        ul {
+            color: white;
+            display: flex;
+            font-size: 0.9rem;
+            justify-content: space-around;
+            margin: 0px;
+            padding: 0px;
+            li {
+                list-style: none;
+            }
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    } 
+    // card main image
+    .card-image {
+        height: 280px;
+        width: 100%;
+    }
+    .about-event {
+        padding-top: 0px;
+        text-align: center;
+
+    }
+    .card-block {
+       
+        .card-text {
+            font-size: 15px;
+        }
+        .event-description {
+            color: #636c72;
+            font-size: 13px;
+            padding-top: 10px;
+        }
+    }
+}
+
+// login
+
+
+.card-login {
+    margin-top: 5px;
+}

@@ -1,0 +1,425 @@
+/*
+ Author: UndreamtMayhem
+ Author URI: undreamtmayhem.github.com
+ Description: Bootstrap 4 template.
+ Version: 1.0.0
+
+  */
+
+body,
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    line-height: normal;
+}
+
+
+/*----------------- Navbar On Top Media screen -------------*/
+
+.navbar {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.logo {
+    width: 150px;
+}
+
+
+/* ------------------------ End Navbar On Top -----------------*/
+
+
+/*------------------------- Start Carousel --------------------*/
+
+.carousel-item {
+    height: 600px;
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+.carousel .car {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.carousel-arrow {
+    color: #3F86D2;
+    font-size: 3.9rem;
+    font-weight: bolder;
+}
+
+
+/*
+.carousel .banner {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	font-weight: lighter;
+	padding: 0.2rem;
+}
+*/
+
+.carousel-caption {
+    z-index: 999;
+}
+
+.carousel-caption {
+    top: auto;
+    left: 5%;
+    right: auto;
+    bottom: 18%;
+    margin: auto;
+    padding: 10px;
+}
+
+
+/* SECTION */
+
+.section-header {
+    border-bottom: 2px solid #fff;
+    font-size: 3.3rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+
+/* card style */
+
+.card-img-bottom-banner {
+    background-color: rgba(0, 0, 0, .9);
+    bottom: 0;
+    margin-right: 0px;
+    padding: 10px;
+    position: absolute;
+    top: auto;
+    width: 100%;
+}
+
+.card.car-latest {
+    border: none;
+    border-radius: 0px;
+    padding: 5px 0 0 5px;
+}
+
+.card.blank-card {
+    background-color: #EFEFEA;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 0px;
+    padding: 0;
+}
+
+.blank-card .hover-card-btn {
+    padding: 10px;
+}
+
+.card.blank-card .card-body {
+    padding: 0px;
+}
+
+.list-group-offers {}
+
+.list-group-offers .list-group-item {
+    /*background-color: transparent;*/
+    color: black;
+    font-size: 0.9rem;
+    /*font-weight: bold;*/
+}
+
+.card.car-model,
+.card.car-sale {
+    border: none;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+.car-model .card-img,
+.car-latest .card-img {
+    border-radius: 0px;
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-overlay .card-title {
+    align-self: flex-end;
+}
+
+.card-arrow {
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+h5.card-arrow a {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 24px;
+    padding: 5px 9px;
+}
+
+.hover-card {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding: 0px;
+}
+
+.hover-card-btn {
+    margin: auto 0;
+    text-align: center;
+}
+
+
+/* end */
+
+#available-models,
+#sale-cars {
+    padding: 2rem 4rem 3.5rem 4rem;
+}
+
+#editions-cars {
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 2rem;
+    padding: 2rem 4rem 3.5rem 4rem;
+}
+
+#sale-cars {
+    padding: 0rem 4rem 3.5rem 4rem
+}
+
+#car-sale-grids,
+#gallery {
+    overflow: hidden;
+}
+
+#latest-car {
+    background-color: #323232;
+    padding: 1rem 4rem 4rem 4rem;
+}
+
+#latest-car h2 {
+    padding: 20px;
+}
+
+.car-thumbnail {
+    padding: 1px;
+}
+
+.sale-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+.sale-header span {
+    color: #3F86D2;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+
+/* SALE CARD */
+
+.card.car-sale {
+    border: none;
+}
+
+.card.car-sale .card-img {
+    border-radius: 0px;
+}
+
+.card.car-sale .card-body {
+    padding: 20px 0;
+}
+
+.card.car-sale .card-text {
+    line-height: 8px;
+    padding: 2px 10px;
+}
+
+
+/*
+.btn-offer {
+	padding: 10px 5px;
+}
+*/
+
+.btn-arrow {
+    float: left;
+    font-weight: bold;
+}
+
+.btn-text {
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.btn-outline-offer {
+    border: 1px solid grey;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.btn-find {
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    margin: 1rem 0 0rem 0;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn-xl {
+    font-size: 2.75rem;
+    /*padding: 0.9rem 1.6rem;*/
+}
+
+.jumbotron-header {
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.offer-row {
+    padding: 10px 5px;
+}
+
+
+/*
+.car-latest {
+	height: 400px;
+}
+
+*/
+
+.card-model-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.model-info {
+    color: #ddb321;
+}
+
+.price {
+    background-color: #3F86D2;
+    font-size: 1.4rem;
+    float: right;
+    margin-right: 10px;
+    padding: 8px 14px;
+    font-weight: 300;
+}
+
+
+/* JUMBOTRON */
+
+.jumbotron-extra {
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 4rem 9rem 4rem;
+}
+
+.jumbotron-car {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 6.2rem 4rem 8rem 4rem;
+}
+
+.jumbotron-sale {
+    margin: 0px;
+    padding: 0 0 3px 0;
+}
+
+.jumbotron-overlay {
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.jumbotron-overlay:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+/* -----------------------Featured Cars--------------------------------------------------------*/
+
+footer {
+    background-color: rgba(255, 255, 255, .6);
+    background-image: url('../image/footer.jpg');
+    background-size: cover;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+}
+
+.footer-inner {
+    background-color: rgba(0, 0, 0, .9);
+    padding: 1rem;
+}
+
+.top-footer {
+    padding: 0.6rem 0 .5rem 0;
+}
+
+.top-footer .top-item {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 1.3rem;
+}
+
+.bottom-footer .bottom-item {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.social-link {
+    font-size: 1.4rem;
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+.car-stats-container,
+#technical-container,
+#features-container {
+    border-bottom: 1px solid darkgrey;
+}
+
+.car-stats-list {
+    display: flex;
+    margin: 20px 0 50px 0;
+    justify-content: center;
+    padding: 0px;
+}
+
+.car-stats-list li {
+    border-right: 1px solid darkgrey;
+    display: inline;
+    list-style: none;
+    padding: 0 20px;
+}

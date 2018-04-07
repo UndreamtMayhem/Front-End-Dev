@@ -1,0 +1,57 @@
+
+// TODO make variable for each class
+
+
+$title-color: #673AB7;
+.app-nav {
+  @extend .navbar;
+  background-color: $white;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+.fa-bars {
+  color:  $gray-light;
+  font-size: 20px;
+}
+.nav-logo {
+  @extend .navbar-brand;
+  color: $title-color;
+  font-family: 'Trocchi', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: normal;
+  padding: 0px;
+}
+
+.hamburger {
+  @extend .collapse;
+  @extend .navbar-collapse;
+  width: auto!important;
+}
+
+.nav-right {
+  @extend .navbar-nav;
+  padding: 10px;
+  a {
+    color: $gray-light;
+    padding-right: 12px;
+    font-size: 19px;
+    text-decoration: none;
+  }
+  li {
+    padding-right:  15px;
+    padding-top: 0px;
+  }
+  .select-item {
+    padding-top: 2px;
+  }
+  .active a {
+    color: $title-color;
+  }
+}
+.navbar-toggler-right{
+  right:3.2rem;
+}
