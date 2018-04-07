@@ -1,0 +1,87 @@
+.hidden.menu {
+    display: none;
+}
+
+main {
+    padding-bottom: 1em !important;
+}
+
+.sidenav {
+    background-color: #f5f6f6;
+}
+
+.sidenav .about {
+    text-align: right;
+}
+
+.sidenav.column {
+    padding: 0 .5em !important
+}
+
+.sidenav .ui.vertical.menu {
+    background-color: transparent;
+    width: 100%;
+}
+
+.sidenav .notifications {
+    padding: 0.5em 1.5em;
+}
+
+.sidenav .ui.segment {
+    border: none;
+    box-shadow: 0px 0px;
+    background-color: transparent;
+}
+
+.sidenav .ui.menu {
+    border: none;
+    box-shadow: 0px 0px;
+}
+
+.main-content {
+    padding-top: 1em !important;
+}
+
+.main-content section.blogs {
+    padding: 0px !important;
+}
+
+article .content {
+    padding: 1.5em;
+}
+
+article .content .blog.stats,
+article .content .share {
+    padding: 0.5em 0;
+    text-align: right;
+}
+
+.stats .button {
+    margin: 10px;
+}
+
+.rectangle.test.ad {
+    margin: 0.5em 0 0 0;
+}
+
+.jumbotron {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+}

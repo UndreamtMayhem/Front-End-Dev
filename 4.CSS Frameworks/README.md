@@ -3,6 +3,6 @@
 ## What's Included
 
 4. CSS frameworks
-  - Bootstrap TO EDIT
-  - Materialize TO EDIT
-  - Semantic UI TODO
+  - a. Bootstrap TO EDIT
+  - b. Materialize TO EDIT
+  - c. Semantic UI TODO

@@ -1,0 +1,43 @@
+ .hidden.menu {
+     display: none;
+ }
+ 
+ nav {
+     margin-bottom: 1em!important;
+ }
+ 
+ main {
+     padding: 0 0 1em 0;
+ }
+ 
+ .masthead.segment {
+     padding: 1em 0em;
+ }
+ 
+ .masthead .ui.menu .ui.button {
+     margin-left: 0.5em;
+ }
+ 
+ .footer.segment {
+     padding: 5em 0em;
+ }
+ 
+ .secondary.pointing.menu .toc.item {
+     display: none;
+ }
+ 
+ @media only screen and (max-width: 700px) {
+     .ui.fixed.menu {
+         display: none !important;
+     }
+     .secondary.pointing.menu .item,
+     .secondary.pointing.menu .menu {
+         display: none;
+     }
+     .secondary.pointing.menu .toc.item {
+         display: block;
+     }
+     .masthead.segment {
+         min-height: 85px;
+     }
+ }
