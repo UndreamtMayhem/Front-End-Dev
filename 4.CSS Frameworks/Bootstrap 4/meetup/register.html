@@ -49,18 +49,60 @@
                     </select>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login
+                    <a class="nav-link" href="login/html">Login
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign Up
+                    <a class="nav-link" href="register.html">Sign Up
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <p>TODO</p>
-
+    <section class="login-container">
+        <div class="card card-login">
+            <div class="card-header">
+                <div class="user-info">
+                    <h6 class="event-title">
+                        <strong>Register</strong>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </h6>
+                </div>
+            </div>
+            <div class="card-block login-block">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="emailAddress">Your Email address:</label>
+                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" required placeholder="Enter email"
+                            pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Confirm Password:</label>
+                        <input type="password" class="form-control" id="password1" placeholder="Confirm Password" required>
+                    </div>
+                    <button id="login" type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="social-button-group-row">
+                <div class="fa-social-icon facebook">
+                    <a class="fa fa-facebook  fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                    <span class="social-text">Login with facebook</span>
+                </div>
+                <div class="fa-social-icon google">
+                    <a class="fa fa-google  fa-social-sm" href="https://plus.google.com/117941782116734110521"></a>
+                    <span class="social-text">Login with google</span>
+                </div>
+                <div class="fa-social-icon twitter">
+                    <a class="fa fa-twitter  fa-social-sm" href="https://twitter.com/undreamtmayhem"></a>
+                    <span class="social-text">Login with twitter</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer-links">
@@ -85,7 +127,6 @@
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./tether/dist/js/tether.min.js"></script>
     <script src="./bootstrap-4.6Alpha/dist/js/bootstrap.min.js"></script>
-    <!--<script src="./js/main.js"></script>-->
 </body>
 
 </html>
