@@ -11,6 +11,8 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--body-font-family);
 }
+
+
 /* nav */
 
 .top-nav {
@@ -36,7 +38,9 @@ nav .nav-left {
     top: 0px;
 }
 
+
 /* end of nav */
+
 .avatar-image {
     border: var(--story-avatar-border);
     padding: 0.25rem;
@@ -66,6 +70,7 @@ nav .nav-left {
 
 
 /* story section */
+
 .story-tabs {
     height: 100px
 }
@@ -82,6 +87,7 @@ nav .nav-left {
 
 
 /* creating posts */
+
 .post-row {
     background-color: #fff;
     border-top: var(--card-border);
@@ -145,7 +151,9 @@ nav .nav-left {
     margin: 0px;
 }
 
+
 /* recommended user post */
+
 .recommended-post .card-header .user-post,
 .suggested-card .card-header .user-post,
 .news-card .card-header .user-post,
@@ -192,13 +200,17 @@ nav .nav-left {
     padding: 0.2rem 0 0 0;
 }
 
+
 /* suggested card */
+
 .suggested-card .card-header .header,
 .news-card .card-header .header {
     border-bottom: var(--post-border);
 }
 
+
 /* suggested card */
+
 .suggested-card .post-ad,
 .news-card .post-article {
     background-color: rgba(0, 0, 0, 0.15);
@@ -241,6 +253,7 @@ nav .nav-left {
 
 
 /* post form */
+
 .modal {
     min-height: 100vh;
     width: 100%;
@@ -270,6 +283,7 @@ nav .nav-left {
 
 
 /* profile page */
+
 header {
     background-image: url('https://placeimg.com/640/680/any');
     background-size: cover;
@@ -362,4 +376,8 @@ header {
 
 #comment-modal li {
     padding: 0 0.25rem;
+}
+
+.m-0 {
+    margin: 0!important;
 }
