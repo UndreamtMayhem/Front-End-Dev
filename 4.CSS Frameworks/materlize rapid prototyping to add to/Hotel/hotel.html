@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="public/materialize-css/dist/css/materialize.min.css" media="screen,projection"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <!-- work on css -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo center">
+                        <i class="large material-icons">local_hotel</i> Hotel
+                    </a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#hotels">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#deals">Deals</a>
+                        </li>
+                        <li class="active">
+                            <a href="#booknow">Book Now</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="side-nav" id="mobile-menu">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://placeimg.com/640/480/arch" alt="background">
+                </div>
+                <a href="#!user">
+                    <img class="circle" src="https://placeimg.com/640/480/arch" alt="avatar">
+                </a>
+                <a href="#!name">
+                    <span class="white-text name">John Doe</span>
+                </a>
+                <a href="#!email">
+                    <span class="white-text email">jdandturk@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li class="active">
+            <a href="#booknow">
+                <i class="material-icons">local_hotel</i> Book Now
+            </a>
+        </li>
+        <li>
+            <a href="#hotels">
+                <i class="material-icons">room</i>Hotels
+            </a>
+        </li>
+        <li>
+            <a href="#about">
+                <i class="material-icons">contact_mail</i>About
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect" href="#deals">
+                <i class="material-icons">contacts</i>Deals
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="waves-effect" href="#!">
+                <i class="material-icons">settings</i>Setting
+            </a>
+        </li>
+    </ul>
+    <main>
+
+        <header id="booknow" class="section scrollspy">
+            <div class="inner container col s12 m6">
+                <div class="container">
+                    <p>
+                        <i class="left material-icons">hotel</i>Hotel Name
+                    </p>
+                </div>
+                <div class="container">
+                    <form action="/">
+                        <div class="input-field col s12">
+                            <select>
+                                <optgroup label="USA car hire">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </optgroup>
+                                <optgroup label="UK car hire">
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                </optgroup>
+                            </select>
+                            <label>Pick-up point</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <label>
+                                <i class="left material-icons">date_range</i> Check In</label>
+                            <input class="validate datepicker" type="text" placeholder="Check in">
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <label>
+                                <i class="left material-icons">date_range</i> Check Out</label>
+                            <input class="validate datepicker" type="text" placeholder="Check out"> </div>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <label>
+                                    <i class="left material-icons">person</i> Adults</label>
+                                <input class="" type="number" value="1" name="Adults" min="1" max="6">
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <label>
+                                    <i class="left material-icons">child_friendly</i> Kids</label>
+                                <input class="" type="number" value="0" name="Kids" min="0" max="6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="waves-effect waves-light btn" type="submit">
+                                <i class="left material-icons">search</i> Search availability
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <section id="deals" class="row section scrollspy">
+            <div class="col s12">
+                <h3>Room Deals</h3>
+                <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+            </div>
+            <form action="/" class="row">
+                <div class="input-field col s6">
+                    <select>
+                        <optgroup label="Deals">
+                            <option value="1">1 Week</option>
+                            <option value="2">2 Week</option>
+                            <option value="3">3 Week</option>
+                            <optgroup label="Flash deals">
+                                <option value="week">Week</option>
+                                <option value="month">Month</option>
+                            </optgroup>
+                    </select>
+                    <label>Room Deals</label>
+                </div>
+                <div class="input-field col s3 m3">
+                    <label>
+                        <i class="left material-icons">person</i> Adults</label>
+                    <input class="" type="number" value="1" name="Adults" min="1" max="6">
+                </div>
+                <div class="input-field col s3 m3">
+                    <label>
+                        <i class="left material-icons">child_friendly</i> Kids</label>
+                    <input class="" type="number" value="0" name="Kids" min="0" max="6">
+                </div>
+                <div class="col s12 m3">
+                    <button class="waves-effect waves-light btn" type="submit">
+                        <i class="left material-icons">search</i> Search availability
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placeimg.com/1280/480/arch" alt="room">
+                        <span class="card-title">Single Room</span>
+                    </div>
+                    <div class="card-content">
+                        <h6>From $99</h6>
+                        <p>Single bed</p>
+                        <p>15m
+                            <sup>2</sup>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <p>
+                            <i class="fa fa-bath fa-large"></i>
+                            <i class="fa fa-phone fa-large"></i>
+                            <i class="fa fa-wifi fa-large"></i>
+                        </p>
+                        </li>
+                        <button class="waves-effect waves-light btn">Choose Room</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placeimg.com/1280/480/arch" alt="room">
+                        <span class="card-title">Double Room</span>
+                    </div>
+                    <div class="card-content">
+                        <h6 class="">From $149</h6>
+                        <p>Queen-size bed</p>
+                        <p>25m
+                            <sup>2</sup>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <p>
+                            <i class="fa fa-bath fa-large"></i>
+                            <i class="fa fa-phone fa-large"></i>
+                            <i class="fa fa-wifi fa-large"></i>
+                            <i class="fa fa-tv fa-large"></i>
+                        </p>
+                        <button class="waves-effect waves-light btn">Choose Room</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placeimg.com/1280/480/arch" alt="room">
+                        <span class="card-title">Deluxe Room</span>
+                    </div>
+                    <div class="card-content">
+                        <h6 class="">From $199</h6>
+                        <p>King-size bed</p>
+                        <p>40m
+                            <sup>2</sup>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <p class="">
+                            <i class="fa fa-bath fa-large"></i>
+                            <i class="fa fa-phone fa-large"></i>
+                            <i class="fa fa-wifi fa-large"></i>
+                            <i class="fa fa-tv fa-large"></i>
+                            <i class="fa fa-glass fa-large"></i>
+                            <i class="fa fa-cutlery fa-large"></i>
+                        </p>
+                        <button class="waves-effect waves-light btn">Choose Room</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hotels" class="section scrollspy row">
+            <div class="col s12">
+                <h3>Our Hotels</h3>
+                <h6>You can find our hotels anywhere in the world:</h6>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/640/480/arch" alt="Cinque Terre" style="width:100%" alt="place">
+                            <span class="card-title">Cinque Terre</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://placeimg.com/640/480/arch" alt="New York" style="width:100%" alt="place">
+                                    <span class="card-title">New York</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://placeimg.com/640/480/arch" alt="San Francisco" style="width:100%" alt="place">
+                                    <span class="card-title">San Francisco</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://placeimg.com/640/480/arch" alt="Pisa" style="width:100%" alt="place">
+                                    <span class="card-title">Pisa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://placeimg.com/640/480/arch" alt="Paris" style="width:100%" alt="place">
+                                    <span class="card-title">Paris</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section scrollspy row">
+            <div class="row" id="about">
+                <div class="col s12 m4">
+                    <h3>About</h3>
+                    <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam.</h6>
+                    <p>We accept:
+                        <i class="fa fa-credit-card fa-large"></i>
+                        <i class="fa fa-cc-mastercard fa-large"></i>
+                        <i class="fa fa-cc-amex fa-large"></i>
+                        <i class="fa fa-cc-cc-visa fa-large"></i>
+                        <i class="fa fa-cc-paypal fa-large"></i>
+                    </p>
+                </div>
+                <div class="col s8 m8">
+                    <div id="googleMap" style="width:100%;height:400px;" class=""></div>
+                </div>
+            </div>
+            <div class="row center-align" style="margin:32px 0">
+                <div class="col m3">
+                    <i class="fa fa-map-marker"></i> 423 Some adr, Chicago, US</div>
+                <div class="col m3">
+                    <i class="fa fa-phone"></i> Phone: +00 151515</div>
+                <div class="col m3">
+                    <i class="fa fa-envelope"></i> Email: mail@mail.com</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="center-align">
+        <h5>Find Us On</h5>
+        <div class="">
+            <i class="fa fa-facebook-official fa-large"></i>
+            <i class="fa fa-instagram fa-large"></i>
+            <i class="fa fa-snapchat fa-large"></i>
+            <i class="fa fa-pinterest-p fa-large"></i>
+            <i class="fa fa-twitter fa-large"></i>
+            <i class="fa fa-linkedin fa-large"></i>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="public/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
+
+</html>

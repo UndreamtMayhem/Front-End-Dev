@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./public/materialize-css/dist/css/materialize.min.css" media="screen,projection"
+    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <nav class="red">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="left">
+                <li>
+                    <a href="#!" class="">Section name</a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search" style="top:-8px">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="row">
+        <aside class="col s3 l3">
+            <ul class="side-nav fixed" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="https://placeimg.com/640/480/any">
+                        </div>
+                        <a href="#!user">
+                            <img class="circle" src="https://placeimg.com/640/480/any">
+                        </a>
+                        <a href="#!name">
+                            <span class="white-text name">John Doe</span>
+                        </a>
+                        <a href="#!email">
+                            <span class="white-text email">jdandturk@gmail.com</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">laptop_chromebook</i>Principal
+                        <span class="badge">99+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">people</i>Social
+                        <span class="new badge">99+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">local_offer</i>Promociones
+                        <span class="new badge">99+</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">star</i>Destacados</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">label</i>Importantes</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">notifications</i>Enviados</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">send</i>Bandeja de salida</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">note</i>Borradores</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">email</i>Todos</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">warning</i>Spam</a>
+
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">delete</i>Papelera</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">label</i>[Gmail] Trash</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">settings</i>Ajustes</a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">help</i>Ayuda y sugerencias</a>
+                </li>
+
+            </ul>
+        </aside>
+
+        <section class="col s12 l9 offset-l3 p-0">
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img class="circle" src="https://dummyimage.com/50x50/000/fff&text=M" alt="">
+                    <p>
+                        <span class="title">
+                            <strong>Title</strong>
+                        </span>
+                        <span class="right blue-text">10:53</span>
+                    </p>
+                    <p class="subject-line">First Line </p>
+                    <p>Second Line
+                        <i class="material-icons right">grade</i>
+                    </p>
+                </li>
+                <li class="collection-item avatar">
+                    <img class="circle" src="https://dummyimage.com/50x50/000/fff&text=M" alt="">
+                    <p>
+                        <span class="title">
+                            <strong>Title</strong>
+                        </span>
+                        <span class="right blue-text">10:53</span>
+                    </p>
+                    <p class="subject-line">First Line </p>
+                    <p>Second Line
+                        <i class="material-icons right">star_border</i>
+                    </p>
+                </li>
+
+
+            </ul>
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red modal-trigger" href="#newmessage-modal">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Modal Structure -->
+    <div id="newmessage-modal" class="modal">
+        <nav class="red">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li>
+                        <a href="#!" class="modal-close">
+                            <i class="material-icons">arrow_back</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="">Logo</a>
+                    </li>
+                </ul>
+                <ul id="" class="right">
+                    <li>
+                        <a href="#" class="dropdown-button" data-activates='attachment-dropdown'>
+                            <i class="material-icons">attach_file</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!"></a>
+                        <i class="material-icons">send</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-button" data-activates='more-dropdown'>
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dropdown Structure -->
+            <ul id='attachment-dropdown' class='dropdown-content'>
+                <li>
+                    <a href="#!">Adjuntar archivo</a>
+                </li>
+                <li>
+                    <a href="#!">Inserts desde Drive</a>
+                </li>
+            </ul>
+            <!-- Dropdown Structure -->
+            <ul id='more-dropdown' class='dropdown-content'>
+                <li>
+                    <a href="#!">Anadir de Contactos</a>
+                </li>
+                <li>
+                    <a href="#!">Descarta</a>
+                </li>
+                <li>
+                    <a href="#!">Ajustes</a>
+                </li>
+                <li>
+                    <a href="#!">Ayuda y sugerencias</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="modal-content">
+            <div class="card card-form darken-1">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">DE</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Para</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Asunto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Escribe un correo</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="public/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

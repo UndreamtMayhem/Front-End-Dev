@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="public/materialize-css/dist/css/materialize.min.css" media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Plan your journey</a>
+                </li>
+                <li>
+                    <a href="badges.html">Status updates</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">Maps</a>
+                </li>
+                <li>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search">
+                                    <i class="material-icons">search</i>
+                                </label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="https://placeimg.com/640/480/any">
+                        </div>
+                        <a href="#!name">
+                            <span class="white-text name">Contact Us</span>
+                        </a>
+                        <a href="#!email">
+                            <span class="white-text email">
+                                <a>jdandturk@gmail.com</a>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">cloud</i>First Link With Icon</a>
+                </li>
+                <li>
+                    <a href="#!">Second Link</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">Subheader</a>
+                </li>
+                <li>
+                    <a class="waves-effect" href="#!">Third Link With Waves</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Page Content goes here -->
+        <div class="row">
+            <div class="col s12">
+                <ul class="pagination">
+                    <li class="waves-effect">
+                        <a href="#!">home </a>
+                    </li>
+                    <li class="waves-effect">
+                        <i class="material-icons">chevron_right</i>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">tickets</a>
+                    </li>
+                </ul>
+                <h4>Play Your Journey</h4>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Buy Tickets</span>
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="from" type="text" class="validate autocomplete">
+                                                <label for="from">From</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="to" type="text" class="validate">
+                                                <label for="to">To</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12 m4">
+                                                <input id="date-leaving" type="text" class="datepicker">
+                                                <label for="date-leaving">Date Leaving</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <input id="time-leaving" type="text" class="timepicker">
+                                                <label for="time-leaving">Time Leaving</label>
+                                            </div>
+                                            <div class="input-field col s12 m4">
+                                                <select>
+                                                    <optgroup label="Return">
+                                                        <option value="1">No Return</option>
+                                                        <option value="2">Return</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Get times and Tickets
+                                                    <i class="material-icons right">train</i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <a class="col m6 waves-effect waves-light btn-large">My journey </a>
+                                <a class="col m6 waves-effect waves-light btn-large">Recent</a>
+                                <p>
+                                    <a href="#">Plan you journey</a> and add to favorites for quick access in the future </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <h4>Find train times instantly </h4>
+                        <i>Simple journey planning</i>
+                        <p>Helping you find train times quicker</p>
+                        <ul>
+                            <li>Save your favorite jounreys and be notified of deals</li>
+                            <li>Clear information of which trains are peak, off-peak or super off-peek</li>
+                            <li>You can create a bookmark your jounrey to access train times even faster</li>
+                        </ul>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis error veritatis voluptatem ducimus, iste numquam maiores
+                        minima tempore perspiciatis dignissimos. Mollitia, tempore iste. Dolorem, maxime autem modi enim
+                        dolore consequuntur?Veniam eos dignissimos eligendi dolore inventore fuga, dicta expedita eaque ipsam
+                        amet, rem ex rerum eveniet quaerat neque minima quas ducimus laborum provident cupiditate? Error
+                        perferendis repellendus totam! Numquam, ab?
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col m4 s12">
+                    <h6 class="white-text">Tickets and Railcards</h6>
+                    <ul>
+                        <li>Travel issues</li>
+                        <li>Season Tickets</li>
+                        <li>Passes</li>
+                        <li>Scheduled Maintence</li>
+                    </ul>
+                </div>
+                <div class="col m4 s12">
+                    <h6 class="white-text">Popular destinations</h6>
+                    <ul>
+                        <li>Trains to ............</li>
+                        <li>Trains to ............</li>
+                        <li>Trains to ............</li>
+                        <li>Trains to ............</li>
+                        <li>Trains to ............</li>
+                        <li>Trains to ............</li>
+                    </ul>
+                </div>
+                <div class="col m4 s12">
+                    <h6 class="white-text">Help and support</h6>
+                    <ul>
+                        <li>Changing your tickets</li>
+                        <li>Lost property</li>
+                        <li>Making a complaint</li>
+                        <li>Refunds and compensation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <ul>
+                    <li>About</li>
+                    <li>LOGO</li>
+                    <li>Terms and conditions</li>
+                    <li>Privacy and cookies</li>
+                    <li>Site accessibility</li>
+                    <li>Site map</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © LOGO 2018 All rights reserved. Images from GWR by author.........
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="public/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>

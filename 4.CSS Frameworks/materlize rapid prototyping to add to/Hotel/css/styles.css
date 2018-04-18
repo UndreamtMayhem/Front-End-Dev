@@ -1,0 +1,18 @@
+header {
+    background-image: url('https://placeimg.com/1280/480/arch');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner,
+section {
+    background-color: white;
+}
+
+.fa-large {
+    font-size: 27px;
+}
+
+body {
+    height: 1vw;
+}

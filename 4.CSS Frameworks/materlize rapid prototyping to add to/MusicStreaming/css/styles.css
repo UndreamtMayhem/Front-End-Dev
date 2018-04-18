@@ -1,0 +1,239 @@
+body {
+    background-color: #000;
+    color: white;
+}
+
+.artist-avatar {
+    border-radius: 50%!important;
+}
+
+nav {
+    background-color: #222326;
+}
+
+main {
+    margin-bottom: 175px !important;
+}
+
+.modal {
+    background-color: #222326;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.modal-content {
+    padding: 0px !important;
+}
+
+.modal-content .card-image img {
+    height: 200px;
+    margin: auto;
+    width: 200px;
+}
+
+.card-form {
+    background-color: #222326;
+    box-shadow: 0px 0px;
+
+
+}
+
+.artist-play {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist-play .card-content {
+    padding: 0.5rem;
+}
+
+.song-slider .card-content {
+    padding: 0.5rem;
+}
+
+.music-control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-header {
+    text-align: center;
+
+}
+
+.section-header h5 {
+    margin-bottom: 2px;
+}
+
+.section-header p {
+    color: #919496;
+    margin: 0 0 5px 0;
+
+}
+
+.music-card.card {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px;
+    text-align: center;
+}
+
+.music-card .card-content {
+    padding: 0rem 1.2rem;
+}
+
+.music-card h5 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.music-card .card-content p {
+    color: #919496;
+}
+
+.bottom-nav {
+    background-color: #222326;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.current-playing {
+    align-items: center;
+    border-bottom: 3px solid rgba(0, 0, 0, .29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+
+}
+
+.current-song p .material-icons {
+    font-size: 1.1rem;
+}
+
+.current-song h6 {
+    margin: 6px 0 0 0;
+}
+
+.current-song p {
+    font-size: 1.2rem;
+    margin: 0 0 6px 0;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2rem 0.6rem 1.2rem;
+}
+
+.nav-icons .material-icons,
+.bottom-nav .material-icons {
+    font-size: 2.5rem;
+}
+
+nav .play-song {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .play-song p {
+    margin: 0px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-footer i {
+    margin-right: 5px;
+}
+
+.bottom-nav .nav-icons a {
+    color: white;
+}
+
+.btn-link {
+    color: white;
+    margin: 0px;
+}
+
+.music-collection,
+.video-collection {
+    border: 0px;
+}
+
+.music-collection .collection-item {
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+.video-collection .collection-item {
+    background-color: transparent;
+    border: 0px;
+
+
+}
+
+.music-collection .collection-item i {
+    padding-right: 20px;
+
+}
+
+.container-box {
+    position: relative;
+    display: inline-block;
+}
+
+.genre-image {
+    max-width: 100%;
+}
+
+.genre-tile {
+    background-size: cover;
+    background-color: rgba(4, 0, 100, 0.47);
+    padding: 0rem!important;
+}
+
+.genre-tile .text-content {
+    background-color: rgba(0, 0, 0, .69);
+    height: 150px;
+
+}
+
+.carousel {
+    height: 270px!important;
+}
+
+.carousel .carousel-item {
+    top: -20px!important;
+}
+
+.album-cover img {
+    height: 170px;
+    margin: auto;
+    width: 170px!important;
+}
+
+.album-title {
+    margin: 0.5rem;
+}
+
+.album-title~p {
+    margin: 0.75rem!important;
+}
+
+.song-title {
+    padding-left: 5px;
+    position: relative;
+    top: -7px;
+
+}
