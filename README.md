@@ -2,23 +2,23 @@
 
 ## Overview
 1. Module Loaders
-  - Webpack TODO
-  - Parcel TODO
+  - Webpack Done
+  - Parcel Done
 
 2. Package Managers
-  - NPM 
-  - Yarn
+  - NPM Done
+  - Yarn Done
 
 3. Task Runners
-  - Grunt TODO
-  - Gulp TODO
+  - Grunt Done
+  - Gulp Done
 
 4. CSS frameworks
-  - Bootstrap TO EDIT
-  - Materialize TO EDIT
-  - Semantic UI TODO
+  - Bootstrap 3 and 4 Done
+  - Materialize Done
+  - Semantic Done
 
-5. Preprocessor
+5. Preprocessor: next
   - SASS TODO
   - Stylus TODO
   - LESS todo

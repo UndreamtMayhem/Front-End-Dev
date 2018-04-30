@@ -1,0 +1,144 @@
+.navbar {
+    background-color: var(--dark);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.jumbotron {
+    background: url(../images/bd-main.jpg);
+    color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+section.slider {
+    color: #ffffff;
+    background: #58626c;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+
+.list-group-item-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.list-group-item {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.card-body,
+.gray {
+    background: #eeeeee;
+}
+
+.pricing-table .card-danger {
+    border: 1px solid #CD5A48;
+}
+
+.pricing-table .card-info {
+    border: 1px solid #3A87B0;
+}
+
+.pricing-table .card-success {
+    border: 1px solid #468847;
+}
+
+section.about {
+    background: url(images/bg.jpg);
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+}
+
+section.about .dmask {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: rgba(100, 0, 0, 0.42);
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.testimonials-arrow {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-top: 0 none;
+    content: "";
+    display: block;
+    height: 14px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-top: -7px;
+    transform: rotate(45deg);
+    width: 14px;
+}
+
+section.contact {
+    background: #f5f5f5 url(images/map-bottom.png);
+    min-height: 400px;
+    background-size: auto 100%;
+    padding-top: 30px;
+}
+
+.footer-copyright {
+    margin-top: -40px;
+}
+
+footer div.footer-ribbon:before {
+    border-right-color: #005580;
+}
+
+footer div.footer-ribbon:before {
+    border-right: 10px solid #005580;
+    border-top: 16px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+footer div.container div.row>div {
+    margin-bottom: 25px;
+}
+
+footer div.footer-ribbon {
+    background: #0088CC;
+    margin: -100px 0 0 30px;
+    padding: 10px 20px 6px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer div.footer-ribbon span {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer {
+    background: #1a1d20;
+    border-top: 4px solid #1a1d20;
+    font-size: 0.9em;
+    padding: 80px 0 0;
+    position: relative;
+}
+
+#footer-menu {
+    text-align: right;
+}
+
+#footer-menu li {
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.img-team-member {
+    width: 120px;
+    height: 120px;
+}

@@ -1,0 +1,127 @@
+:root {
+    --panel-bg-color: #153C26;
+    --navbar-bg-color: #378a65;
+    --footer-bg-color: #1f4d38;
+    --jumbotron-bg-color: #3d9970;
+    --body-bg-color: #255c43;
+    --form-bg-color: #317b59;
+}
+
+body {
+    color: white;
+    background-color: var(--body-bg-color);
+}
+
+nav {
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-item {
+    max-height: 92vh;
+}
+
+.transparent-container {
+    background-color: rgba(0, 0, 0, 0.86);
+    border-radius: 4%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.btn-default {
+    background-color: #3d9970;
+    color: #fff;
+}
+
+.btn-default:hover {
+    background-color: #3d9970;
+}
+
+.modal-content {
+    background-color: var(--navbar-bg-color)
+}
+
+.modal-header,
+.modal-footer {
+    background-color: var(--footer-bg-color);
+    border: none;
+    border-radius: 0px;
+}
+
+.close,
+.close:hover,
+.close:focus {
+    color: #ebebeb;
+}
+
+.no-list-style li {
+    list-style: none;
+}
+
+.panel {
+    margin-bottom: 21px;
+    background-color: var(--panel-bg-color);
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.56), 0px 2px 10px 0px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.56), 0px 2px 10px 0px rgba(0, 0, 0, 0.82);
+}
+
+.panel-body {
+    padding: 15px
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: -1;
+    border-top-left-radius: -1
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: var(--panel-bg-color);
+    border: 1px solid transparent
+}
+
+.panel-footer {
+    border-top: 1px solid transparent;
+    border-bottom-right-radius: -1px;
+    border-bottom-left-radius: -1px;
+    padding: 0.75rem 1rem;
+}
+
+.panel-footer .btn {
+    background-color: #56bc8e;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    color: #fff;
+}
+
+.item {
+    min-height: 600px;
+}
+
+.marketing {
+    background-color: #1f4d38;
+}
+
+.offers {
+    background-color: #255c43;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+}
+
+.jumbotron {
+    background-color: var(--jumbotron-bg-color)!important;
+    border-radius: 0px;
+}
+
+.search-form {
+    background-color: var(--form-bg-color);
+}

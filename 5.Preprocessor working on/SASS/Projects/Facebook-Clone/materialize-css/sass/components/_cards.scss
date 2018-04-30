@@ -1,0 +1,296 @@
+@mixin post-article {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0!important;
+    color: white;
+    padding: 0.5rem;
+    h6 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+}
+
+$post-border: 1px solid #ebeced;
+.card-panel {
+    padding: $card-padding;
+    margin: $element-top-margin 0 $element-bottom-margin 0;
+    border-radius: 2px;
+    background-color: $card-bg-color;
+}
+
+.card {
+    position: relative;
+    margin: $element-top-margin 0 $element-bottom-margin 0;
+    background-color: $card-bg-color;
+    border-radius: 0;
+    .header {
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            .col-left {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .user-post {
+            padding: 0 0 0 0.5rem;
+            p {
+                margin: 0;
+            }
+            .username,
+            .shared-name {
+                font-weight: bold;
+            }
+        }
+        .user-content {
+            padding: 10px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .card-title {
+        font-size: 24px;
+        font-weight: 300;
+        &.activator {
+            cursor: pointer;
+        }
+    }
+    // Card Sizes
+    &.small,
+    &.medium,
+    &.large {
+        position: relative;
+        .card-image {
+            max-height: 60%;
+            overflow: hidden;
+        }
+        .card-image+.card-content {
+            max-height: 40%;
+        }
+        .card-content {
+            max-height: 100%;
+            overflow: hidden;
+        }
+        .card-action {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    &.small {
+        height: 300px;
+    }
+    &.medium {
+        height: 400px;
+    }
+    &.large {
+        height: 500px;
+    }
+    // Horizontal Cards
+    &.horizontal {
+        &.small,
+        &.medium,
+        &.large {
+            .card-image {
+                height: 100%;
+                max-height: none;
+                overflow: visible;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        display: flex;
+        .card-image {
+            max-width: 50%;
+            img {
+                border-radius: 0;
+                max-width: 100%;
+                width: auto;
+            }
+        }
+        .card-stacked {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            position: relative;
+            .card-content {
+                flex-grow: 1;
+            }
+        }
+    }
+    // Sticky Action Section
+    &.sticky-action {
+        .card-action {
+            z-index: 2;
+        }
+        .card-reveal {
+            z-index: 1;
+            padding-bottom: 64px;
+        }
+    }
+    .card-image {
+        position: relative;
+        // Image background for content
+        img {
+            display: block;
+            border-radius: 2px 2px 0 0;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 350px;
+            width: 100%;
+        }
+        .card-title {
+            color: $card-bg-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            padding: $card-padding;
+        }
+    }
+    .card-content {
+        padding: $card-padding;
+        border-radius: 0 0 2px 2px;
+        p {
+            margin: 0;
+        }
+        .card-title {
+            display: block;
+            line-height: 32px;
+            margin-bottom: 8px;
+            i {
+                line-height: 32px;
+            }
+        }
+        .post-stats {
+            padding: 0.5rem;
+            .emojis {
+                span {
+                    font-size: 1.3rem;
+                    margin: 0 0.2rem;
+                }
+                .emoji {
+                    border-radius: 50%;
+                    padding: 3px 5px 3px 9px;
+                }
+                .emoji.like {
+                    color: white;
+                    background-color: blue;
+                }
+                .emoji.love {
+                    color: white;
+                    background-color: red;
+                }
+            }
+            .right {
+                font-size: 0.9rem;
+                padding: 0.2rem 0 0 0;
+            }
+        }
+    }
+    .card-content.post-ad {
+        margin: 0;
+        .btn-suggestion {
+            background-color: transparent;
+            border: 1px solid #757575;
+            font-size: 0.8rem;
+        }
+        @include post-article()
+    }
+    .card-content.post-article {
+        @include post-article
+    }
+    .card-action {
+        &:last-child {
+            border-radius: 0 0 2px 2px;
+        }
+        background-color: inherit; // Use inherit to inherit color classes
+        border-top: 1px solid rgba(160, 160, 160, .2);
+        position: relative;
+        padding: 16px $card-padding;
+        a:not(.btn):not(.btn-large):not(.btn-floating) {
+            color: $card-link-color;
+            margin-right: $card-padding;
+            transition: color .3s ease;
+            text-transform: uppercase;
+            &:hover {
+                color: $card-link-color-light;
+            }
+        }
+    }
+    .card-reveal {
+        padding: $card-padding;
+        position: absolute;
+        background-color: $card-bg-color;
+        width: 100%;
+        overflow-y: auto;
+        left: 0;
+        top: 100%;
+        height: 100%;
+        z-index: 3;
+        display: none;
+        .card-title {
+            cursor: pointer;
+            display: block;
+        }
+    }
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.card.story {
+    border-top: $card-border;
+    margin: 0!important;
+    .card-content {
+        padding: 0.5rem 1rem;
+    }
+    .stories-header {
+        font-weight: 700;
+        padding: 0.5rem 0;
+    }
+}
+
+.card.suggested .header,
+.card.news .header {
+    border-bottom: $post-border;
+}
+
+.card.recommended .card-content,
+.card.recommended .card-footer {
+    padding: 0.75rem;
+}
+
+.card.profile {
+    padding: 1rem 0;
+    .profile-tab {
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid darkgray;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0 0 0;
+        .item {
+            padding: 1rem 1.5rem;
+        }
+    }
+    .profile-name {
+        margin: 0;
+    }
+    .profile-info {
+        padding: 0 1rem;
+    }
+}

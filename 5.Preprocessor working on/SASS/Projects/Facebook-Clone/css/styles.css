@@ -1,0 +1,10 @@
+.globe {
+    top: 3px;
+    position: relative;
+}
+
+header {
+    background-image: url('https://placeimg.com/640/680/any');
+    background-size: cover;
+    padding: 15rem 0 0 0;
+}

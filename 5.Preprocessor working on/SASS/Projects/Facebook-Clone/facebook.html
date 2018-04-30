@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebookclone</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!--Import materialize.css -->
+    <link rel="stylesheet" href="./materialize-css/dist/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="./materialize-css/bin/materialize.css"> -->
+
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <nav class="blue darken-2">
+        <div class="app-navbar">
+            <ul class="nav-left">
+                <li>
+                    <a href="#!" class="app-logo">
+                        <i class="material-icons">camera</i>
+                    </a>
+                </li>
+                <li class="search-icon">
+                    <a href="#">
+                        <i class="material-icons">search</i>
+                        <span class="search-text">Search</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="hide-on-med-and-down">
+                <li>
+                    <a href="#">
+                        <i class="material-icons">message</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="row">
+        <div class="col s12">
+            <ul class="tabs nav-tabs tabs-fixed-width blue-text text-darken-2">
+                <li class="tab col s3">
+                    <a class="active  blue-text text-darken-2" href="#feed">
+                        <i class="material-icons">dashboard</i>
+                    </a>
+                </li>
+                <li class="tab col s3">
+                    <a class="blue-text text-darken-2" href="#friendrequest">
+                        <i class="material-icons">people</i>
+                    </a>
+                </li>
+                <li class="tab col s3">
+                    <a class="blue-text text-darken-2" href="#store">
+                        <i class="material-icons">store</i>
+                    </a>
+                </li>
+                <li class="tab col s3">
+                    <a class="blue-text text-darken-2" href="#notifications">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="feed" class="col s12">
+            <!-- Stories row -->
+            <div class="card story darken-1">
+                <div class="card-content">
+                    <p class="stories-header">Stories</p>
+                    <ul class="tabs story-tabs">
+                        <li class="tab col s1">
+                            <div class="avatar text-center">
+                                <img class="avatar-image circle" src="https://placeimg.com/640/480/any" alt="avatar" height="75" width="75">
+                                <p class="grey-text text-darken-1">NAME</p>
+                            </div>
+                        </li>
+                        <li class="tab col s1">
+                            <div class="avatar text-center">
+                                <img class="avatar-image circle" src="https://placeimg.com/640/480/any" alt="avatar" height="75" width="75">
+                                <p class="grey-text text-darken-1">NAME</p>
+                            </div>
+                        </li>
+                        <li class="tab col s1">
+                            <div class="avatar text-center">
+                                <img class="avatar-image circle" src="https://placeimg.com/640/480/any" alt="avatar" height="75" width="75">
+                                <p class="grey-text text-darken-1">NAME</p>
+                            </div>
+                        </li>
+                        <li class="tab col s1">
+                            <div class="avatar text-center">
+                                <img class="avatar-image circle" src="https://placeimg.com/640/480/any" alt="avatar" height="75" width="75">
+                                <p class="grey-text text-darken-1">NAME</p>
+                            </div>
+                        </li>
+                        <li class="tab col s1">
+                            <div class="avatar text-center">
+                                <img class="avatar-image circle" src="https://placeimg.com/640/480/any" alt="avatar" height="75" width="75">
+                                <p class="grey-text text-darken-1">NAME</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- post form row -->
+            <div class="row btn-post-group">
+                <div class="col s3 l2 offset-l1">
+                    <img class="circle" alt="avatar" src="https://placeimg.com/640/480/any" height="45" width="45">
+                </div>
+                <div class="col s6 l5 btn-post modal-trigger" data-target="create-post-modal">
+                    <p class="btn-post-modal grey-text text-darken-1">What's on your mind?</p>
+                </div>
+                <div class="col s2 offset-s1 l2 offset-l2 photo-icon grey-text text-darken-1">
+                    <i class="material-icons">photo</i>
+                    <p>Photo</p>
+                </div>
+            </div>
+            <!-- end of post row -->
+            <!-- recommended post row -->
+
+
+            <div class="row">
+                <div class="col s12 offset-l3 l6">
+                    <div class="card recommended">
+                        <div class="header">
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <img src="https://placeimg.com/640/480/any" alt="avatar" style="width:35px; height:35px;" class="circle responsive-img">
+                                    <div class="user-post grey-text text-darken-1">
+                                        <p class="">
+                                            <span class="username black-text text-darken-1">
+                                                USER NAME
+                                            </span> shared
+                                            <span class="shared-name black-text text-darken-1">
+                                                aaa.......................
+                                            </span>
+
+                                        </p>
+                                        <span> 4 mins </span>
+                                        <i class="tiny material-icons globe">public</i>
+                                    </div>
+                                </div>
+                                <span class="black-text">
+                                    <i class="material-icons right">more_horiz</i>
+                                </span>
+                            </div>
+                            <div class="user-content">
+                                <p>fdhskjfhskjfhs</p>
+                            </div>
+                        </div>
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" alt="post-image" src="https://placeimg.com/640/480/any">
+                        </div>
+                        <div class="card-content">
+                            <div class="post-stats row grey-text text-darken-4">
+                                <div class="emojis left">
+                                    <span class="emoji love">&#9829; </span>
+                                    <span class="emoji like">&#128402; </span>
+                                    <span>4</span>
+                                </div>
+                                <div class="right">
+                                    <span>3 comments </span>
+                                    <span>' shares</span>
+                                </div>
+                            </div>
+                            <div class="card-action card-footer">
+                                <div>
+                                    <i class="tiny material-icons left">thumb_up</i>like</div>
+                                <div class="modal-trigger" data-target="comment-modal">
+                                    <i class="tiny material-icons left">comment</i>comment</div>
+                                <div>
+                                    <i class="tiny material-icons left">share</i>share</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- suggestion card -->
+                <div class="col s12 offset-l3 l6">
+                    <div class="card suggested">
+                        <div class="header">
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <div class="user-post grey-text text-darken-2">
+                                        <p>Suggested Post</p>
+                                    </div>
+                                </div>
+                                <span class="black-text">
+                                    <i class="material-icons right">more_horiz</i>
+                                </span>
+                            </div>
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <img src="https://placeimg.com/640/480/any" alt="avatar" style="width:35px; height:35px;" class="circle responsive-img">
+                                    <div class="user-post">
+                                        <p>
+                                            <strong>
+                                                USER NAME
+                                            </strong> shared .......................
+                                        </p>
+                                        <span> 4 mins </span>
+                                        <i class="tiny material-icons globe">public</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-content">
+                                <p>fdhskjfhskjfhs</p>
+                            </div>
+                        </div>
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" alt="post-image" src="https://placeimg.com/640/480/any">
+                        </div>
+                        <div class="card-content post-ad row">
+                            <div class="left">
+                                <h6 class="grey-text text-darken-1">TITLE</h6>
+                                <p class="grey-text text-darken-4">dgfdfgdhdfh</p>
+                            </div>
+                            <div class="right">
+                                <a class="btn btn-suggestion grey-text text-darken-4">Learn more</a>
+                            </div>
+
+                        </div>
+                        <div class="card-content">
+                            <div class="post-stats row grey-text text-darken-4">
+                                <div class="emojis left">
+                                    <span class="emoji love">&#9829; </span>
+                                    <span class="emoji like">&#128402; </span>
+                                    <span>4</span>
+                                </div>
+                                <div class="right">
+                                    <span>3 comments </span>
+                                    <span>' shares</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action card-footer">
+                            <div>
+                                <i class="tiny material-icons left">thumb_up</i>like</div>
+                            <div class="modal-trigger" data-target="comment-modal">
+                                <i class="tiny material-icons left ">comment</i>comment</div>
+
+                            <div>
+                                <i class="tiny material-icons left">share</i>share</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News card -->
+                <div class="col s12 offset-l3 l6">
+                    <div class="card news">
+                        <div class="header">
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <div class="user-post">
+                                        <p>
+                                            Suggestion
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="black-text">
+                                    <i class="material-icons right">more_horiz</i>
+                                </span>
+                            </div>
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <img src="https://placeimg.com/640/480/any" alt="avatar" style="width:35px; height:35px;" class="circle responsive-img">
+                                    <div class="user-post">
+                                        <p>
+                                            <strong>
+                                                USER NAME
+                                            </strong> shared .......................
+                                        </p>
+                                        <span> 4 mins </span>
+                                        <i class="tiny material-icons globe">public</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="user-content">
+                                <p>fdhskjfhskjfhs</p>
+                            </div>
+                        </div>
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" alt="post-image" src="https://placeimg.com/640/480/any">
+                        </div>
+
+                        <div class="card-content post-article">
+                            <h6 class="grey-text text-darken-1">NEWS SOURCE</h6>
+                            <p class="grey-text text-darken-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem itaque facere fugit recusandae quisquam quidem veniam, esse quae magnam debitis quia, sequi cum, minima deleniti perferendis officia qui dolor.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <div class="post-stats row grey-text text-darken-4">
+                                <div class="emojis left">
+                                    <span class="emoji love">&#9829; </span>
+                                    <span class="emoji like">&#128402; </span>
+                                    <span>4</span>
+                                </div>
+                                <div class="right">
+                                    <span>3 comments </span>
+                                    <span>' shares</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action card-footer">
+                            <div>
+                                <i class="tiny material-icons left">thumb_up</i>like</div>
+                            <div class="modal-trigger" data-target="comment-modal">
+                                <i class="tiny material-icons left ">comment</i>comment</div>
+                            <div>
+                                <i class="tiny material-icons left">share</i>share</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- text card -->
+                <div class="col s12 offset-l3 l6">
+                    <div class="card text-card">
+                        <div class="header">
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <div class="user-post">
+                                        <p>
+                                            Suggestion
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="black-text">
+                                    <i class="material-icons right">more_horiz</i>
+                                </span>
+                            </div>
+                            <div class="top-row">
+                                <div class="col-left">
+                                    <img src="https://placeimg.com/640/480/any" alt="avatar" style="width:35px; height:35px;" class="circle responsive-img">
+                                    <div class="user-post">
+                                        <p>
+                                            <strong>
+                                                USER NAME
+                                            </strong> shared .......................
+                                        </p>
+                                        <span> 4 mins </span>
+                                        <i class="tiny material-icons globe">public</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="user-content">
+                                <p>fdhskjfhskjfhs</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="post-stats row grey-text text-darken-4">
+                                <div class="emojis left">
+                                    <span class="emoji love">&#9829; </span>
+                                    <span class="emoji like">&#128402; </span>
+                                    <span>4</span>
+                                </div>
+                                <div class="right">
+                                    <span>3 comments </span>
+                                    <span>' shares</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action card-footer">
+                            <div>
+                                <i class="tiny material-icons left">thumb_up</i>like</div>
+                            <div class="modal-trigger" data-target="comment-modal">
+                                <i class="tiny material-icons left ">comment</i>comment</div>
+                            <div>
+                                <i class="tiny material-icons left">share</i>share</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="friendrequest" class="col s12">
+            <ul class="collection friend-request-collection">
+                <li class="collection-item">Friend Requests
+                    <span class="new badge">4</span>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="https://placeimg.com/140/180/any" alt="avatar" class="circle">
+                    <h5>Title</h5>
+                    <div>
+                        <p>
+                            <a class="blue btn-flat white-text">Confirm</a>
+                            <a class="btn-flat btn-secondary">Delete</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="store" class="col s12">
+            <!-- post form row -->
+            <div class="row post-row">
+                <a class="blue btn-flat white-text">Place 112km</a>
+                <a class="btn-flat btn-secondary">Category</a>
+                <a class="btn-flat btn-secondary">Price</a>
+            </div>
+            <div class="row">
+                <div class="col s6 m4">
+                    <img src="https://placeimg.com/640/680/any" alt="store-item" class="responsive-img">
+                </div>
+                <div class="col s6 m4">
+                    <img src="https://placeimg.com/640/680/any" alt="store-item" class="responsive-img">
+                </div>
+                <div class="col s6 m4">
+                    <img src="https://placeimg.com/640/680/any" alt="store-item" class="responsive-img">
+                </div>
+            </div>
+        </div>
+        <div id="notifications" class="col s12">
+            <ul class="collection notification-collection">
+                <li class="collection-item">Earlier</li>
+                <li class="collection-item avatar">
+                    <img src="https://placeimg.com/140/180/any" alt="avatar" class="circle">
+                    <h6>Title
+                        <span>replied to your comment</span>
+                    </h6>
+                    <div>
+                        <p>3 hours ago</p>
+                    </div>
+                    <a href="#!" class="secondary-content">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- Modal Structure -->
+    <div id="create-post-modal" class="modal">
+        <nav class="blue darken-2">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left">
+                    <li>
+                        <a href="#!" class="modal-action modal-close">
+                            <i class="material-icons">arrow_back</i>
+                        </a>
+                    </li>
+                    <li>Create Post</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="modal-content">
+            <div class="card text-card">
+                <div class="header">
+                    <div class="top-row">
+                        <div class="left">
+                            <img src="https://placeimg.com/640/480/any" alt="avatar" style="width:35px; height:35px;" class="circle responsive-img">
+                            <div class="right user-post">
+                                <p>
+                                    <strong>
+                                                USER NAME
+                                            </strong>
+                                </p>
+                                <a class="btn-flat btn-secondary">Friends</a>
+                                <a class="btn-flat btn-secondary">Album</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-post-content">
+                        <textarea name="post-content" id="post-content" cols="30" rows="200" placeholder="What's on your mind"></textarea>
+                    </div>
+                </div>
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle green">photo</i>
+                        <span class="title">Fotos/video</span>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle pink">location_on</i>
+                        <span class="title">Check in</span>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle yellow">face</i>
+                        <span class="title">Feeling/Activity/Sticker</span>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle blue">person</i>
+                        <span class="title">Tag Friends</span>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle red">videocam</i>
+                        <span class="title">Transmitar</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="comment-modal" class="modal">
+        <nav class="blue darken-2">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li>
+                        <a href="#!" class="modal-action modal-close">
+                            <i class="material-icons">arrow_back</i>
+                        </a>
+                    </li>
+                    <li class="emojis">
+                        <span class="emoji love">&#9829; </span>
+                    </li>
+                    <li class="emojis">
+                        <span class="emoji like">&#128402; </span>
+                    </li>
+                    <li>
+                        <span>4</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="modal-content">
+            <div class="message-container">
+                <img src="https://placeimg.com/640/480/any" alt="avatar" class="circle left" width="27" height="55">
+                <div class="message">
+                    <div class="row">
+                        <h5 class="user">Username</h5>
+                        <p class="col s12 comment">efjeiruoewiur</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-s1">
+                    30 min
+                </div>
+                <div class="col sm-3">
+                    Me gusta
+                </div>
+                <div class="col sm-3">
+                    Responder
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer comment-footer">
+            <!-- post form row -->
+            <div class="row post-row">
+                <div class="col s3 l2 offset-l1">
+                    <img class="circle" alt="avatar" src="https://placeimg.com/640/480/any" height="45" width="45">
+                </div>
+                <div class="col s6 l5 post-btn-container modal-trigger" data-target="create-post-modal">
+                    <p class="post-modal-btn-text grey-text text-darken-1">What's on your mind?</p>
+                </div>
+                <div class="col s2 offset-s1 l2 offset-l2 photo-icon grey-text text-darken-1">
+                    <i class="material-icons">photo</i>
+                    <p>Photo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>

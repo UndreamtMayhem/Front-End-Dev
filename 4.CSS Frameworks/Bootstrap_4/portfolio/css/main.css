@@ -1,0 +1,65 @@
+:root {
+    --body-bg-color: #0069c5;
+    --panel-bg-color: #003a6e;
+    --alert-blue-light: #1692ff;
+    --alert-dark-blue: #0069c5;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.no-list {
+    padding: 0px;
+}
+
+.no-list li {
+    list-style: none;
+    padding: 0.5rem 0rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    display: block;
+    margin: -90px auto 0 auto;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.portfolio-container {
+    margin-top: 7.5rem;
+    margin-bottom: 2rem;
+}
+
+.panel {
+    background-color: var(--panel-bg-color);
+}
+
+footer {
+    background-color: #003a6e;
+}
+
+.alert-light-blue {
+    background-color: var(--alert-blue-light);
+    border-color: #c5e4ff;
+    color: white;
+}
+
+.alert-dark-blue {
+    background-color: var(--alert-dark-blue);
+    border-color: #c5e4ff;
+
+    color: white;
+}
+
+.fa-icon {
+    background-color: #0074d9;
+    border-radius: 50%;
+    color: white;
+    padding: 10px 12px;
+    margin: 0 10px;
+}
+
+.fa-facebook {
+    padding: 10px 15px;
+}
