@@ -1,0 +1,8 @@
+.list-group-offers {
+    @extend .list-group;
+    @extend .list-group-flush;
+    .list-group-item {
+        color: black;
+        font-size: 0.9rem;
+    }
+}

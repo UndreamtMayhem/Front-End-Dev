@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Cars</title>
+    <meta name="description" content="classic cars">
+    <meta name="author" content="undreamtmayhem">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="./public/image/classiccars.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Models
+                        <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="models.html">All</a>
+                        <a class="dropdown-item" href="models.html">Sport</a>
+                        <a class="dropdown-item" href="models.html">Old</a>
+                        <a class="dropdown-item" href="models.html">New</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-right">
+                <li class="nav-item">
+                    <i class="fa fa-cog nav-link"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="carouselCar" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./public/image/ford-bullet.jpg" alt="oldcar" width="100%">
+                <div class="carousel-caption">
+                    <div class="car">
+                        <span class="carousel-arrow"> > </span>
+                        <strong>Ford GT</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/image/porsche-carrera.jpg" alt="porche" width="100%">
+                <div class="carousel-caption">
+                    <div class="car">
+                        <span class="carousel-arrow"> > </span>
+                        <strong>Porsche Carrera</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/image/mclaren.jpg" alt="benz" width="100%">
+                <div class="carousel-caption">
+                    <div class="car">
+                        <span class="carousel-arrow"> > </span>
+                        <strong>Mclaren</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="available-models">
+        <h2 class="section-header">Available Models </h2>
+        <div class="row">
+            <div class="car-model col-lg-3">
+                <img class="card-img" src="./public/image/car1.jpg" alt="Card image cap">
+                <div class="overlay">
+                    <h5 class="card-title card-arrow">
+                        <a href="">
+                            <span class="text-danger"> > </span> 911
+                        </a>
+                    </h5>
+                </div>
+            </div>
+            <div class="car-model col-lg-3">
+                <img class="card-img" src="./public/image/car2.jpg" alt="Card image cap">
+                <div class="overlay">
+                    <h5 class="card-title card-arrow">
+                        <a href="">
+                            <span class="text-danger"> > </span> 918
+                        </a>
+                    </h5>
+
+                </div>
+            </div>
+            <div class="car-model col-lg-3">
+                <img class="card-img" src="./public/image/car3.jpg" alt="Card image cap">
+                <div class="overlay">
+                    <h5 class="card-title card-arrow">
+                        <a href="">
+                            <span class="text-danger"> > </span> Impreza
+                        </a>
+                    </h5>
+                </div>
+            </div>
+            <div class="car-model col-lg-3">
+                <img class="card-img" src="public/image/car4.jpg" alt="Card image cap">
+                <div class="overlay">
+                    <h5 class="card-title card-arrow">
+                        <a href="">
+                            <span class="text-danger"> > </span> Evo IIV
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="jumbotron-extra" style="background-image:url('./public/image/shelby.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="jumbotron-header">Discover other models see what we have in store</h3>
+                    <a class="btn btn-find btn-xl" href="#" role="button">Find more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sale-cars">
+        <h2 class="section-header">Cars on Sale</h2>
+        <h3 class="sale-header">
+            <span> > </span> Top Models</h3>
+        <div class="row">
+            <div class="car-sale">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-sale">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-sale">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-sale">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="car-sale-grids">
+        <div class="jumbotron-sale">
+            <div class="row">
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/vols.jpg');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Classics
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/ferr.png');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Modern Classics
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/vols.jpg');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Sports
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/ferr.png');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Utility
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-car">
+        <div class="container">
+            <h2 class="text-center text-white">Latest Cars</h2>
+            <div class="row">
+                <div class="car-latest main">
+                    <img class="card-img" src="public/image/porche.jpg" alt="Card image cap">
+                    <div class="bottom-banner text-white">
+                        <h5 class="card-title card-arrow">
+                            <h3 class="card-model-name">Rolls Royce
+                                <span class="price">$1000</span>
+                            </h3>
+                            <p class="model-info">"Lorem ipsum dolor sit amet, consectetur,
+                                <br> sed do eiusmod tempor incididunt" </p>
+                        </h5>
+                    </div>
+                </div>
+                <div class="blank-card">
+                    <div class="card-body">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Top Deals </a>
+                        </h5>
+                        <ul class="list-group-offers">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="car-latest">
+                    <img class="card-img" src="./public/image/porche.jpg" alt="Card image cap">
+                    <div class="bottom-banner text-white">
+                        <h5 class="card-title card-arrow">
+                            <h3 class="card-model-name">Rolls Royce
+                                <span class="price">$1000</span>
+                            </h3>
+                            <p class="model-info">"Lorem ipsum dolor sit amet, consectetur,
+                                <br> sed do eiusmod tempor incididunt" </p>
+                        </h5>
+                    </div>
+                </div>
+                <div class="car-latest">
+                    <img class="card-img" src="./public/image/porche.jpg" alt="Card image cap">
+                    <div class="bottom-banner text-white">
+                        <h5 class="card-title  card-arrow">
+                            <h3 class="card-model-name">Rolls Royce
+                                <span class="price">$1000</span>
+                            </h3>
+                            <p class="model-info">"Lorem ipsum dolor sit amet, consectetur,
+                                <br> sed do eiusmod tempor incididunt" </p>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="offer-row">
+                <button type="button" class="btn btn-outline-offer btn-offer col-sm-12 col-lg-3">
+                    <span class="btn-arrow"> > </span>
+                    <span class="btn-text">More</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <nav class="navbar navbar-transparent">
+                <div class="top-footer">
+                    <a class="top-item" href="#">Company </a>
+                    <a class="top-item" href="#">careers</a>
+                    <a class="top-item" href="#">Contact</a>
+                    <a class="top-item" href="#">privacy & legal</a>
+                    <a class="top-item" href="#">newsletter</a>
+                    <a class="top-item" href="#">store</a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-transparent">
+                <div class="bottom-footer">
+                    <nav class="social-link">
+                        <span class="bottom-item">Follow us</span>
+                        <li class="nav-item">
+                            <i class="fa fa-instagram bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-youtube bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-wechat bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-facebook bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-twitter bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-google-plus bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-pinterest bottom-item"></i>
+                        </li>
+                    </nav>
+                </div>
+            </nav>
+            <p class="copyright-text">Copyright © 2018 Automobili car S.p.A. a sole shareholder company part of Car Group. All rights reserved. VAT no. IT 00591801204</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

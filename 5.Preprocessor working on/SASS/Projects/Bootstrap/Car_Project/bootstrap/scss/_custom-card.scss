@@ -1,0 +1,136 @@
+@mixin car-card-base() {
+    @extend .card;
+    /* Display & Box Model */
+    border: none;
+    border-radius: 0px;
+    padding: 5px;
+    .card-img {
+        border-radius: 0px;
+    }
+}
+
+.car-latest {
+    @extend .card;
+    /* Display & Box Model */
+    border: none;
+    border-radius: 0px;
+    padding: 5px 0 0 5px;
+    @extend .col-lg-6;
+    .bottom-banner {
+        background-color: rgba(0, 0, 0, .9);
+        /* Positioning */
+        bottom: 0;
+        position: absolute;
+        top: auto;
+        /* Display & Box Model */
+        margin-right: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    .card-img {
+        border-radius: 0px;
+    }
+    .card-model-name {
+        /* Text */
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.car-latest.main {
+    @extend .col-lg-8;
+}
+
+.blank-card {
+    @extend .card;
+    @extend .col-lg-4;
+    /* Color */
+    color: #fff;
+    background-color: #EFEFEA;
+    /* Display & Box Model */
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 0px;
+    padding: 0;
+    .card-body {
+        padding: 0px;
+    }
+    .hover-card-btn {
+        padding: 10px;
+        margin: auto 0;
+        text-align: center;
+    }
+}
+
+.car-model {
+    @extend .card;
+    .hover-card-btn {
+        margin: auto 0;
+        text-align: center;
+    }
+    @include car-card-base();
+    .overlay {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* SALE CARD */
+
+.car-sale {
+    @include car-card-base();
+    @extend .col-lg-3;
+    width: 18rem;
+    .card-body {
+        padding: 20px 0;
+    }
+    .card-text {
+        padding: 2px 10px;
+        line-height: 8px;
+    }
+}
+
+.card-img-overlay .card-title {
+    align-self: flex-end;
+}
+
+.card-arrow {
+    font-size: 1.9rem;
+    font-weight: bolder;
+    a {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-size: 24px;
+        padding: 5px 9px;
+    }
+}
+
+.hover-card {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding: 0px;
+}
+
+.model-info {
+    color: #ddb321;
+}
+
+.price {
+    background-color: #3F86D2;
+    float: right;
+    margin-right: 10px;
+    padding: 8px 14px;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.card-feature {
+    @extend .mb-3;
+    @extend .col-lg-3;
+    @extend .p-0;
+    @extend .mr-1;
+}

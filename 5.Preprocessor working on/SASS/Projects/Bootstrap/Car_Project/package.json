@@ -1,0 +1,17 @@
+{
+  "name": "car_project",
+  "version": "1.0.0",
+  "description": "convert bootstrap to sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "bootstrap4": "file:bootstrap4",
+    "npm": "^6.0.0"
+  },
+  "devDependencies": {}
+}

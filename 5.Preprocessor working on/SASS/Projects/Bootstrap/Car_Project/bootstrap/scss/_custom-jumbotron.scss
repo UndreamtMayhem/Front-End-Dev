@@ -1,0 +1,57 @@
+.jumbotron-extra {
+    @extend .jumbotron;
+    @extend .jumbotron-fluid;
+    @extend .bg-dark;
+    background-image: url('../../public/image/shelby.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Display & Box Model */
+    padding: 5rem 4rem 9rem 4rem;
+}
+
+.jumbotron-car {
+    @extend .jumbotron;
+    @extend .jumbotron-fluid;
+    @extend .bg-dark;
+    background-size: cover;
+    background-position: center;
+    /* Display & Box Model */
+    height: 100vh;
+    padding: 6.2rem 4rem 8rem 4rem;
+    .car-content {
+        @extend .col-lg-8;
+        @extend .my-5;
+        @extend .p-4;
+    }
+}
+
+.jumbotron-sale {
+    @extend .jumbotron;
+    @extend .jumbotron-fluid;
+    @extend .bg-dark;
+    /* Display & Box Model */
+    margin: 0px;
+    padding: 0 0 3px 0;
+}
+
+.jumbotron-overlay {
+    background-color: rgba(0, 0, 0, .8);
+    -webkit-transition: background-color 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+    /* Display & Box Model */
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    &:hover {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+.jumbotron-header {
+    @extend .h1;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+}

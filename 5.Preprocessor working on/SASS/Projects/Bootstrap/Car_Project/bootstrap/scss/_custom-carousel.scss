@@ -1,0 +1,39 @@
+.carousel-item {
+    /* Display & Box Model */
+    height: 600px;
+}
+
+.carousel-caption {
+    /* Positioning */
+    top: auto;
+    right: auto;
+    bottom: 18%;
+    left: 5%;
+    /* Display & Box Model */
+    margin: auto;
+    padding: 10px;
+    /* Other */
+    z-index: 999;
+    .car {
+        /* Color */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Text */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        .carousel-arrow {
+            /* Color */
+            color: #3F86D2;
+            /* Text */
+            font-size: 3.9rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel-item {
+        /* Display & Box Model */
+        height: 400px;
+    }
+}

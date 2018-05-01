@@ -1,0 +1,44 @@
+#available-models {
+    padding: 2rem 4rem 3.5rem 4rem;
+    @extend .container;
+}
+
+.car-stats-container,
+.technical-container,
+.features-container {
+    @extend .container;
+    border-bottom: 1px solid darkgrey;
+}
+
+.features-container {
+    @extend .mb-5;
+    @extend .pb-3;
+}
+
+#sale-cars {
+    @extend .container;
+    padding: 0rem 4rem 3.5rem 4rem
+}
+
+.car-stats-container {
+    .description {
+        @extend .mb-5;
+    }
+    .car-stats-list {
+        /* Positioning */
+        display: flex;
+        justify-content: center;
+        /* Display & Box Model */
+        margin: 20px 0 50px 0;
+        padding: 0px;
+    }
+    .car-stats-list li {
+        /* Positioning */
+        display: inline;
+        /* Display & Box Model */
+        border-right: 1px solid darkgrey;
+        padding: 0 20px;
+        /* Other */
+        list-style: none;
+    }
+}

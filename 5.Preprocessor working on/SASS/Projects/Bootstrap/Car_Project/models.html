@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Cars</title>
+    <meta name="description" content="classic cars">
+    <meta name="author" content="undreamtmayhem">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="./public/image/classiccars.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Models
+                        <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="models.html">All</a>
+                        <a class="dropdown-item" href="models.html">Sport</a>
+                        <a class="dropdown-item" href="models.html">Old</a>
+                        <a class="dropdown-item" href="models.html">New</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-right">
+                <li class="nav-item">
+                    <i class="fa fa-cog nav-link"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron-extra" style="background-image:url('./public/image/shelby.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Models</li>
+                        </ol>
+                    </nav>
+                    <h3 class="h1 text-white jumbotron-header">All Models</h3>
+                    <a class="btn btn-find btn-xl" href="#collapseExample" role="button" ta-toggle="collapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Filtered By</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="collapse m-3" id="collapseExample">
+        <div class="card card-body p-4">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-2 p-3">
+                        <h3>Model</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                All
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Ford
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Dodge
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Porsche
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-3">
+                        <h3>FuelType</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                All
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Diesel
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Gasoline
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Hybrid
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-3">
+                        <h3>Transmission</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                All
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Automatic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Manual
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label pl-2" for="defaultCheck1">
+                                Semi Automatic
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>
+                            <label for="amount">Price range:</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+
+                        <div id="slider-range"></div>
+                        <div class="form-group mt-4">
+                            <input type="text" class="form-control" id="carModel" aria-describedby="carModel" placeholder="Car Model">
+                        </div>
+                        <button type="button" class="btn btn-outline-offer btn-offer my-3">
+                            <span class="btn-arrow"> > </span>
+                            <span class="btn-text">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="container" id="sale-cars">
+        <h3 class="sale-header">
+            <span> > </span> Model x</h3>
+        <div class="model-sale row">
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="sale-cars">
+        <h3 class="sale-header">
+            <span> > </span> Model y</h3>
+        <div class="model-sale row">
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./public/image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="car-sale-grids">
+        <div class="jumbotron-sale">
+            <div class="row">
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/vols.jpg');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Classics
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/ferr.png');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Modern Classics
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/vols.jpg');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Sports
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-card" style="background-image: url('./public/image/ferr.png');">
+                    <div class="car-model jumbotron-overlay">
+                        <h5 class="card-title card-arrow hover-card-btn">
+                            <a href="">
+                                <span class="text-danger"> > </span> Utility
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <nav class="navbar navbar-transparent">
+                <div class="top-footer">
+                    <a class="top-item" href="#">Company </a>
+                    <a class="top-item" href="#">careers</a>
+                    <a class="top-item" href="#">Contact</a>
+                    <a class="top-item" href="#">privacy & legal</a>
+                    <a class="top-item" href="#">newsletter</a>
+                    <a class="top-item" href="#">store</a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-transparent">
+                <div class="bottom-footer">
+                    <nav class="social-link">
+                        <span class="bottom-item">Follow us</span>
+                        <li class="nav-item">
+                            <i class="fa fa-instagram bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-youtube bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-wechat bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-facebook bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-twitter bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-google-plus bottom-item"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-pinterest bottom-item"></i>
+                        </li>
+                    </nav>
+                </div>
+            </nav>
+            <p class="copyright-text">Copyright © 2018 Automobili car S.p.A. a sole shareholder company part of Car Group. All rights reserved. VAT no. IT 00591801204</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+#latest-car {
+    background-color: #323232;
+    padding: 1rem 4rem 4rem 4rem;
+    h2 {
+        padding: 20px;
+    }
+}
+
+.sale-header {
+    /* Display & Box Model */
+    margin-left: 5px;
+    padding: 4px;
+    /* Text */
+    font-size: 1.4rem;
+    font-weight: bold;
+    span {
+        /* Color */
+        color: #3F86D2;
+        /* Text */
+        font-size: 1.7rem;
+        font-weight: bolder;
+    }
+}
+
+.main-navbar {
+    background-color: rgba(0, 0, 0, .6);
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-dark;
+    @extend .fixed-top;
+}
+
+.logo {
+    width: 150px;
+}
+
+.offer-row {
+    @extend .row;
+    background-color: #fff;
+    padding: 10px 5px;
+}
+
+.section-header {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+    font-size: 3.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#editions-cars {
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 2rem;
+    padding: 2rem 4rem 3.5rem 4rem;
+}
+
+#car-sale-grids,
+#gallery {
+    overflow: hidden;
+}
+
+#gallery {
+    @extend .mb-5;
+}
+
+.car-thumbnail {
+    padding: 1px;
+}
