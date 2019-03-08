@@ -1,29 +1,35 @@
 {
-  "name": "example-yarn-package",
-  "version": "1.0.0",
-  "description": "An example package to demonstrate Yarn",
-  "main": "index.js",
-  "repository": "github.com/yarnpkg/example-yarn-package",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "Daniel Johnson",
-  "license": "BSD-2-Clause",
-  "dependencies": {
-    "autoprefixer": "^8.2.0",
-    "postcss-modules": "^1.1.0",
-    "postcss-nested": "^3.0.0",
-    "posthtml-img-autosize": "^0.1.2",
-    "sass": "^1.1.1"
-  },
-  "devDependencies": {
-    "caniuse-lite": "^1.0.30000697",
-    "jest-cli": "15.1.1",
-    "node-sass": "^4.8.3",
-    "postcss-cssnext": "^3.1.0",
-    "typescript": "^2.8.1"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  }
+    "name": "example-yarn-package",
+    "version": "1.0.0",
+    "description": "An example package to demonstrate Yarn",
+    "main": "index.js",
+    "repository": "github.com/yarnpkg/example-yarn-package",
+    "scripts": {
+        "test": "jest",
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+
+    },
+    "author": "Daniel Johnson",
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "autoprefixer": "^8.2.0",
+        "parcel": "^1.12.0",
+        "postcss-modules": "^1.1.0",
+        "postcss-nested": "^3.0.0",
+        "posthtml-img-autosize": "^0.1.2",
+        "sass": "^1.1.1",
+        "yarn": "^1.13.0"
+    },
+    "devDependencies": {
+        "caniuse-lite": "^1.0.30000697",
+        "jest-cli": "15.1.1",
+        "node-sass": "^4.8.3",
+        "parcel-bundler": "^1.12.0",
+        "postcss-cssnext": "^3.1.0",
+        "typescript": "^2.8.1"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    }
 }

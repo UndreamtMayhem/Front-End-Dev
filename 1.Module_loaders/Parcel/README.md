@@ -11,12 +11,14 @@ Whats included
 ```
 yarn install
 
+
 ```
 
 ### Development
 
 ```
 parcel index.html
+yarn dev
 ```
 
 Files appear in /dist folder
@@ -24,7 +26,8 @@ Files appear in /dist folder
 ### Production
 
 ```
-parcel build entry.js
+parcel build index.html
+yarn build
 ```
 Files appear in /dist folder
 
