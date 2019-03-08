@@ -16,7 +16,7 @@ Whats included
 ## Getting started
 
 ```
-npm install
+npm install / npm i
 ```
 
 ### Development
