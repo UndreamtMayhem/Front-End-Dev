@@ -305,7 +305,7 @@ module.exports = function(grunt) {
         'clean',
         'mkdir',
         'copy',
-        'image_resize',
+        // 'image_resize',
         'responsive_images',
         'pug',
         'htmlmin',

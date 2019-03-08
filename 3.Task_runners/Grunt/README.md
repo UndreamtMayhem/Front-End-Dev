@@ -4,7 +4,11 @@
 Install node and grunt dependencies
 
 ```
-npm init
+npm install -g grunt-cli
+npm i
+download 
+http://www.imagemagick.org/script/download.php
+http://www.graphicsmagick.org/INSTALL-windows.html#start-installation-wizard
 ```
 
 Lint CSS 

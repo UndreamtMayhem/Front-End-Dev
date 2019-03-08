@@ -271,7 +271,3 @@ venv.bak/
 # mypy
 
 .mypy_cache/
-2.Package_managers/NPM/node_modules/acorn-globals/LICENSE
-2.Package_managers/NPM/node_modules/cliui/README.md
-2.Package_managers/NPM/node_modules/decamelize/index.js
-2.Package_managers/NPM/node_modules/js-stringify/package.json
