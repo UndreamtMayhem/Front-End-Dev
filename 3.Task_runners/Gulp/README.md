@@ -4,7 +4,9 @@
 
 ### Install node and grunt dependencies
 ```
-npm init
+npm i
+npm install gulp-cli -g
+npm install gulp -D
 ```
 
 ### Build project

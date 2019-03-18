@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACH,IAAI,EAHO,qBAAqB;EAIhC,gBAAgB,ECLC,OAAO;CDSzB;;AAND,AAGE,IAHE,CAGF,EAAE,EAHJ,IAAI,CAGE,EAAE,CAAC;EACH,KAAK,ECNM,OAAO;CDOrB",
+    "sources": [
+        "appStyles.scss",
+        "themeColors.scss"
+    ],
+    "names": [],
+    "file": "appStyles.css"
+}

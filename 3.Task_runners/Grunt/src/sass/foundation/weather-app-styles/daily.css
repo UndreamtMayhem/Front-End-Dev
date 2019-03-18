@@ -1,0 +1,48 @@
+.daily-panel {
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+
+.daily .day, .daily .current-day {
+  color: white;
+}
+
+.daily .date {
+  padding: 10px;
+}
+
+.daily .card {
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+          box-shadow: 10px 10px 5px #888888;
+}
+
+.daily .card .temperature-max {
+  font-size: 30px;
+}
+
+.daily .card .temperature-min {
+  font-size: 19px;
+}
+
+.triangle-bottom {
+  position: relative;
+}
+
+.triangle-bottom:after {
+  position: absolute;
+  top: 100%;
+  left: 85%;
+  margin-left: -50%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 15px rgba(255, 255, 255, 0.2);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
+
+.wi {
+  padding-left: 15px;
+}
+/*# sourceMappingURL=daily.css.map */

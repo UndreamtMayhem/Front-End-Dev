@@ -9,6 +9,7 @@
     "license": "ISC",
     "description": "",
     "devDependencies": {
+        "grunt": "^1.0.1",
         "grunt-contrib-htmlmin": "^2.4.0",
         "grunt-contrib-pug": "^1.0.0",
         "grunt-htmlhint": "^0.9.13",

@@ -67,7 +67,7 @@ gulp.task('style', function() {
 
 // Responsive images
 gulp.task('imagemin', () =>
-    gulp.src('project/img/*')
+    gulp.src('project/img/*.jpg')
     .pipe(imagemin([
         imagemin.gifsicle({ interlaced: true }),
         imagemin.jpegtran({ progressive: true }),
@@ -123,10 +123,10 @@ gulp.task('build', [
     'build-html',
     'html-validate',
     'imagemin',
-    'style',
-    'doc',
-    'compress',
-    'js',
+    //'style',
+    //'doc',
+    //'compress',
+    //'js',
 ]);
 
 gulp.task('test', [
