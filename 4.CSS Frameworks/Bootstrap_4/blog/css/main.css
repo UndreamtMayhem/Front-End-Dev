@@ -117,8 +117,7 @@ body {
     color: white;
 }
 
-#skills,
-{
+#skills {
     background-color: #EFEFEF;
 }
 
@@ -129,10 +128,6 @@ body {
 .text-shadow {
     text-shadow: 1px 1px 1px black;
 }
-
-.legend {}
-
-.box {}
 
 .box p {
     margin: 10px;

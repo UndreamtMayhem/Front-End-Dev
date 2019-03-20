@@ -53,6 +53,7 @@ h3 {
 .jumbotron-home {
     min-height: 450px;
     background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 

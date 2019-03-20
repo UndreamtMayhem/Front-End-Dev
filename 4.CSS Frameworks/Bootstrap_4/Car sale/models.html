@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
     <title>Classic Cars</title>
     <meta name="description" content="classic cars">
     <meta name="author" content="undreamtmayhem">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="./css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
 </head>
@@ -22,18 +22,17 @@
     <!-- Navbar Up -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-                <img class="logo" src="image/classiccars.png" alt="logo">
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo" src="./image/classiccars.png" alt="logo">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">HOME
+                    <a class="nav-link" href="./index.html">HOME
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -42,14 +41,14 @@
                         <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu ">
-                        <a class="dropdown-item" href="models.html">All</a>
-                        <a class="dropdown-item" href="models.html">Sport</a>
-                        <a class="dropdown-item" href="models.html">Old</a>
-                        <a class="dropdown-item" href="models.html">New</a>
+                        <a class="dropdown-item" href="./models.html">All</a>
+                        <a class="dropdown-item" href="./models.html">Sport</a>
+                        <a class="dropdown-item" href="./models.html">Old</a>
+                        <a class="dropdown-item" href="./models.html">New</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="search.html">Search</a>
+                    <a class="nav-link" href="./search.html">Search</a>
                 </li>
             </ul>
             <ul class="navbar-nav nav-right">
@@ -59,7 +58,8 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-extra jumbotron-fluid bg-dark" style="background-image:url('image/shelby.jpg');">
+
+    <div class="wow fadeIn slow jumbotron jumbotron-extra jumbotron-fluid bg-dark" style="background-image:url('image/shelby.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -72,16 +72,16 @@
                         </ol>
                     </nav>
                     <h3 class="h1 text-white jumbotron-header">All Models</h3>
-                    <a class="btn btn-find btn-xl" href="#collapseExample" role="button" ta-toggle="collapse" data-toggle="collapse" aria-expanded="false"
-                        aria-controls="collapseExample">Filtered By</a>
+                    <a class="btn btn-find btn-xl" href="#collapseExample" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Filtered By</a>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="collapse m-3" id="collapseExample">
+
+    <div class="wow fadeInLeft collapse m-3" id="collapseExample">
         <div class="card card-body p-4">
-            <form action="">
+            <form action="/">
                 <div class="row">
                     <div class="col-lg-2 p-3">
                         <h3>Model</h3>
@@ -92,20 +92,20 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label pl-2" for="defaultCheck2">
                                 Ford
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                            <label class="form-check-label pl-2" for="defaultCheck3">
                                 Dodge
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                            <label class="form-check-label pl-2" for="defaultCheck4">
                                 Porsche
                             </label>
                         </div>
@@ -113,26 +113,26 @@
                     <div class="col-lg-3 p-3">
                         <h3>FuelType</h3>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                            <label class="form-check-label pl-2" for="defaultCheck5">
                                 All
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                            <label class="form-check-label pl-2" for="defaultCheck6">
                                 Diesel
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                            <label class="form-check-label pl-2" for="defaultCheck7">
                                 Gasoline
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                            <label class="form-check-label pl-2" for="defaultCheck8">
                                 Hybrid
                             </label>
                         </div>
@@ -140,26 +140,26 @@
                     <div class="col-lg-3 p-3">
                         <h3>Transmission</h3>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                            <label class="form-check-label pl-2" for="defaultCheck9">
                                 All
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                            <label class="form-check-label pl-2" for="defaultCheck10">
                                 Automatic
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                            <label class="form-check-label pl-2" for="defaultCheck11">
                                 Manual
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label pl-2" for="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                            <label class="form-check-label pl-2" for="defaultCheck12">
                                 Semi Automatic
                             </label>
                         </div>
@@ -183,12 +183,13 @@
             </form>
         </div>
     </div>
-    <section class="container" id="sale-cars">
+
+    <section class="wow fadeInRight container sale-cars">
         <h3 class="sale-header">
             <span> > </span> Model x</h3>
         <div class="model-sale row">
             <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">718 Cayman </p>
                     <p class="card-text">
@@ -201,7 +202,7 @@
                 </div>
             </div>
             <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">718 Cayman </p>
                     <p class="card-text">
@@ -214,7 +215,7 @@
                 </div>
             </div>
             <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">718 Cayman </p>
                     <p class="card-text">
@@ -227,65 +228,7 @@
                 </div>
             </div>
             <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">718 Cayman </p>
-                    <p class="card-text">
-                        from £ 42,897.00 incl. VAT
-                    </p>
-                    <button type="button" class="btn btn-outline-offer btn-offer">
-                        <span class="btn-arrow"> > </span>
-                        <span class="btn-text">Offers</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container" id="sale-cars">
-        <h3 class="sale-header">
-            <span> > </span> Model y</h3>
-        <div class="model-sale row">
-            <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">718 Cayman </p>
-                    <p class="card-text">
-                        from £ 42,897.00 incl. VAT
-                    </p>
-                    <button type="button" class="btn btn-outline-offer btn-offer">
-                        <span class="btn-arrow"> > </span>
-                        <span class="btn-text">Offers</span>
-                    </button>
-                </div>
-            </div>
-            <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">718 Cayman </p>
-                    <p class="card-text">
-                        from £ 42,897.00 incl. VAT
-                    </p>
-                    <button type="button" class="btn btn-outline-offer btn-offer">
-                        <span class="btn-arrow"> > </span>
-                        <span class="btn-text">Offers</span>
-                    </button>
-                </div>
-            </div>
-            <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">718 Cayman </p>
-                    <p class="card-text">
-                        from £ 42,897.00 incl. VAT
-                    </p>
-                    <button type="button" class="btn btn-outline-offer btn-offer">
-                        <span class="btn-arrow"> > </span>
-                        <span class="btn-text">Offers</span>
-                    </button>
-                </div>
-            </div>
-            <div class="card car-sale col-lg-3" style="width: 18rem;">
-                <img class="card-img" src="image/featurporch.jpg" alt="Card image cap">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">718 Cayman </p>
                     <p class="card-text">
@@ -300,7 +243,66 @@
         </div>
     </section>
 
-    <section id="car-sale-grids">
+    <section class="wow fadeInLeft container sale-cars">
+        <h3 class="sale-header">
+            <span> > </span> Model y</h3>
+        <div class="model-sale row">
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card car-sale col-lg-3" style="width: 18rem;">
+                <img class="card-img" src="./image/featurporch.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">718 Cayman </p>
+                    <p class="card-text">
+                        from £ 42,897.00 incl. VAT
+                    </p>
+                    <button type="button" class="btn btn-outline-offer btn-offer">
+                        <span class="btn-arrow"> > </span>
+                        <span class="btn-text">Offers</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="car-sale-grids" class="wow fadeInRight">
         <div class="jumbotron jumbotron-fluid jumbotron-sale">
             <div class="row">
                 <div class="col-lg-6 hover-card" style="background-image: url('image/vols.jpg');">
@@ -336,7 +338,9 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
     <footer>
         <div class="footer-inner">
             <nav class="navbar navbar-transparent">
@@ -353,43 +357,45 @@
                 <div class=" container navbar-nav flex-row justify-content-center bottom-footer" style="width:100%">
                     <nav class="nav social-link">
                         <span class="bottom-item">Follow us</span>
-                        <li class="nav-item">
-                            <i class="fa fa-instagram bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-youtube bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-wechat bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-facebook bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-twitter bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-google-plus bottom-item nav-link"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa fa-pinterest bottom-item nav-link"></i>
-                        </li>
+                        <ul class="footer-links">
+                            <li class="nav-item">
+                                <i class="fa fa-instagram bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-youtube bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-wechat bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-facebook bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-twitter bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-google-plus bottom-item nav-link"></i>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-pinterest bottom-item nav-link"></i>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </nav>
 
-            <p class="text-center text-white copyright-text">Copyright © 2018 Automobili car S.p.A. a sole shareholder company part of Car Group. All rights reserved. VAT
-                no. IT 00591801204</p>
+            <p class="text-center text-white copyright-text">Copyright © 2018 Automobili car S.p.A. a sole shareholder company part of Car Group. All rights reserved. VAT no. IT 00591801204</p>
 
         </div>
 
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
