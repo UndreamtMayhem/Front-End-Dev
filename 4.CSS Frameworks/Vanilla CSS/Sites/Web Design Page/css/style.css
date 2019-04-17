@@ -1,0 +1,304 @@
+/* .nav-main **/
+.nav-main {
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: #eee 0.15rem solid;
+  text-align: center;
+}
+
+.nav-main nav {
+  margin-top: 5px;
+}
+
+.nav-main a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-main li {
+  float: left;
+  list-style: none;
+  padding: 0 20px 0 20px;
+}
+
+.nav-main #branding h1 {
+  color: #8c979b;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.nav-main .highlight,
+.nav-main .current a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-main a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Jumbtron */
+.jumbotron {
+  background: url('../img/showcase1.jpg') no-repeat;
+  background-size: cover;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.jumbotron .tagline {
+  font-size: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 550px;
+}
+
+.overlay p {
+  margin-bottom: 2.5rem;
+}
+
+
+
+
+
+/* Boxes */
+#boxes {
+  margin: 1rem 0;
+}
+
+#boxes .box {
+  box-sizing: border-box;
+
+  text-align: center;
+  width: 33%;
+  padding: 0 1rem;
+}
+
+#boxes .box img {
+
+  border-radius: 50%;
+  border: 1px solid #a6a6ac;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 6rem;
+  overflow: hidden;
+}
+
+.container .header {
+  color: #2a2b3a;
+  text-align: center;
+  font: bold 36px/40px 'Roboto', sans-serif;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.container .header::after {
+  position: absolute;
+  content: '';
+  width: 46px;
+  height: 3px;
+  background: #ccccd0;
+  left: 50%;
+  margin-left: -23px;
+  bottom: -80px;
+
+}
+
+
+.secondary-jumbotron {
+  background: url('../img/showcase1.jpg') no-repeat;
+  text-align: center;
+  color: #ffffff;
+  background-size: cover;
+
+}
+
+.secondary-jumbotron .overlay {
+  padding: 3rem 1rem 0 1rem;
+  margin: 1.5rem 0 0;
+  min-height: 200px;
+}
+
+
+/* Newsletter */
+#newsletter {
+  color: #2a2b3a;
+  padding: 1rem 0;
+}
+
+#newsletter .left {
+  width: 40%;
+}
+
+#newsletter .flex-center {
+  align-items: center;
+}
+
+#newsletter form {
+  box-sizing: border-box;
+  width: 60%;
+  margin: 0 2rem;
+}
+
+#newsletter input[type="email"] {
+  padding: 0.55rem;
+  height: 25px;
+  width: 60%;
+}
+
+/* Sidebar */
+aside#sidebar {
+  width: 30%;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+
+
+
+#main {
+  margin: 1rem 0;
+}
+
+/* Main-col */
+article#main-col {
+  width: 65%;
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+.social-icons li {
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+
+
+
+
+.footer.main {
+  padding: 20px;
+  color: #ffffff;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px) {
+
+  .nav-main nav li,
+    {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+
+  article#main-col {
+    width: 100%;
+  }
+
+  aside#sidebar {
+    width: 100%;
+  }
+
+  nav {
+    padding-top: 1rem;
+  }
+
+  .nav-main {
+    padding-bottom: 1.5rem;
+  }
+
+  .flex-center {
+    flex-direction: column;
+  }
+
+  .nav-main #branding h1 {
+    font-size: 2rem;
+  }
+
+  #boxes .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: #eee 0.15rem solid;
+  }
+
+
+  #newsletter .left {
+    width: 100%;
+  }
+
+  #newsletter form {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  #newsletter h1 {
+    font-size: 2rem;
+  }
+
+
+  .jumbotron .tagline {
+    margin-top: 6rem;
+    font-size: 2.3rem;
+  }
+
+
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .fa.social-icon {
+    padding: 15px;
+    font-size: 15px;
+    width: 16px;
+  }
+  section.social {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,91 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.callToActionBtn {
+    
+    background: #e8491d;
+    color: #ffffff;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 44px;
+    width: 30%;
+}
+
+.dark-bg {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.button {
+    color: #FFF;
+    background-color: #ffc153;
+    margin-bottom: 1rem;
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+/* flex */
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-title {
+    background: #0383c0;
+    color: #fff;
+}
+
+.section-title h2 {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.section-title small {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+
+.card {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 25%;
+}
