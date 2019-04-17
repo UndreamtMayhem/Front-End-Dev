@@ -1,0 +1,9 @@
+
+game of life
+https://codepen.io/mr_nemeth/pen/XKZOyK?editors=1010
+
+
+dungeon game 
+https://medium.com/@victorcatalintorac/dungeon-with-rooms-algorithm-for-javascript-ultimate-begginer-guide-ec1489e90314
+https://codepen.io/thepeted/pen/aNrdzP
+

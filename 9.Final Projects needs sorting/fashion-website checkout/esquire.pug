@@ -1,0 +1,174 @@
+- var links = ['style', 'culture', 'life', 'watch', 'food & drink', 'long reads']
+- var stories = { "Glenn O'Brien On The Changing Landscape Of...": './img/story.jpg', "Women We Love On Instagram This Week": './img/story1.png', "How To Make Foundation Became Cool Again": './img/story2.jpg', "Behind The Banter: How Intolerance, Islamphobia...": './img/story4.jpg', "The Best Clothes Store To Shop This Month": './img/story3.jpg'}
+- var n = 0
+// add comments for different sizes in percentages
+head
+  //add css
+  link(rel="stylesheet", href="./sass/media-query.min.css")
+  link(href="https://fonts.googleapis.com/css?family=Playfair+Display", rel="stylesheet")
+  title="PeaceLoveChic"
+body(class='layout')
+  div(class="container")
+    header(class="navbar")
+        div(class="title")
+          h1 PeaceLoveChic
+        nav
+          ul(class="container")
+            each link in links
+              li(class="upper")= link
+            li(class="search") 
+              img(src='http://placeimg.com/25/25/people')
+            
+    //lg 100%
+    div(class="advert")
+      //lg 50%
+      div(class="advert-container")
+        img(src='./img/advert.png')
+      //100%
+    //lg 80%
+    main
+      //lg 80%
+      section(class="trending-stories")
+          div(class="container")
+            //lg 15%
+            each val, key in stories
+              div(class="story")
+                  img(src=val)
+                  p=key
+  
+      
+      section(class="photo-panels")
+        //lg 30%
+        div(class="container")
+          div(class="tier1")
+            div(class="color-square center")
+              p 
+                span(class="style-box") STYLE
+              h2 The Best Dressed Male Of The Week 
+          div(class="tier2")
+            img(class="panel", src='./img/article1.jpg')
+        // 80%
+      
+      section(class="top-stories container")
+        
+        article(class="top-stories-articles container") 
+          
+          div(class="top-story-info")
+            div(class="about")
+              ul
+                li Catergory
+                li Share
+            
+              div(class="text")
+                h2 If Elon Musk Follows Through On These Plans, Transportation Will Never Be the Same
+                p(class="top-story-p") From flying cars to tunnels to space travel
+          // 20%
+          // 80%
+          div(class="top-story-img")
+            img(src='./img/articleimg.jpg')
+        div(class="top-stories-advert")
+          img(src="./img/story-advert.png")
+      
+      //repeat section with different stuff sitemap sections
+      section(class="long-stories")  
+        header(class="section-header container")
+          div(class="advert")
+            //lg 50%
+            div(class="advert-container")
+              img(src='./img/advert.png')         
+          div(class="section-header-title")
+            h3(class="section-header-title-h3 center") Genre
+          //repeat 4 times replace with script
+          
+          div(class="genre-themes")
+            img(src='http://placeimg.com/580/360/people')
+            p 9 Alternative Dating Apps To Tinder
+
+          div(class="genre-themes")
+            img(src='http://placeimg.com/580/360/people')
+            p What It's Like Being A British Expat In Trump's...
+
+          div(class="genre-themes")
+            img(src='http://placeimg.com/580/360/people')
+            p 12 Things About Being A Woman That Women Won't...
+
+          div(class="genre-themes")
+            img(src='http://placeimg.com/580/360/people')
+            p The 11 Habits Of Stylish Men
+        div(class="advert")
+          //lg 50%
+          div(class="advert-container")
+            img(src='./img/advert.png')          
+        // repeat this template multiple articles
+        article(class="articles container") 
+          // 80%
+          div(class="info container")
+            // 20%
+            
+            div(class="article-about")
+              ul
+                li Culture
+                li May 4th, 2017
+                li Share
+              div(class="text")
+                h2 If Elon Musk Follows Through On These Plans, Transportation Will Never Be the Same
+                p From flying cars to tunnels to space travel
+                span By Daniel Johnson
+            div(class="image-panel")
+              img(src='./img/articleimg.jpg') 
+      
+    
+    div(class="more-story-btn-container container")
+      div(class="more-story-btn")
+      
+    
+    // 80%
+    footer
+      p(class="center") Load More Stories
+      div(class="footer-top container")
+        //50%
+        div(class="footer-left")
+          div(class="container")
+            div(class="left")
+              h5 Subscribe
+              p Subscribe never miss an issue
+              input(type="button" value="Subscribe now" class="default-button") 
+                
+            div(class="right")
+              img(src="./img/story.jpg")
+        //50%
+        div(class="footer-right")
+          div(class="container")
+            div(class="left")
+              h5 Subscribe
+              p Subscribe never miss an issue
+              input(type="button" value="Sign Up" class="default-button") 
+            div(class="right")
+              img(src="./img/story.jpg")
+      //100%
+      
+      div(class="footer-bottom container")
+        div(class="logo")
+          h2 PeaceLoveChic
+          ul
+            li Twitter
+            li Facebook
+            li Pin Interest
+      //100%
+      nav(class="terms-and-cond")
+        //repeat 
+        ul(class="container")
+
+          li(class="sitemap-link") SUBSCRIPTION
+          li(class="sitemap-link")  ADVERTISING
+          li(class="sitemap-link")  COOKIE POLICY
+          li(class="sitemap-link")  TERMS & CONDITIONS
+          li(class="sitemap-link")  COMPLAINTS
+          li(class="sitemap-link") PRIVACY POLICY
+      footer(class="second-footer")
+        div(class="container")
+          div(class="btm-left-logo")
+            img(src="./img/icon.jpg")
+          div(class="sitemap-right")
+            address  ©2017 Hearst Magazines UK is the trading name of the National Magazine Company Ltd, 72 Broadwick Street, London, W1F 96P. Registred in England. All Rights Reserved.
+            p Esquire, part of the Hearst UK Fashion & Beauty Network
