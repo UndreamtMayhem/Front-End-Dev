@@ -1,0 +1,35 @@
+.greeting-header {
+    @extend .container;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-shadow: 3px 3px 8px #000;
+    color: white;
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    p {
+        font-size: 3rem;
+    }
+}
+
+.jumbotron {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -9999;
+    .holder {
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        bottom: 0%;
+        left: 0px;
+        margin: 0 auto;
+        max-width: 100%;
+        background-image: url('../../../img/background.jpg');
+        background-size: cover;
+        filter: grayscale(80%);
+    }
+}

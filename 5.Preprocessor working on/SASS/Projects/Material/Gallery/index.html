@@ -7,107 +7,221 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <!--Import materialize.css -->
+    <!--Import materialize.css-->
     <link rel="stylesheet" href="./materialize-css/dist/css/materialize.min.css">
-    <!--<link rel="stylesheet" href="./materialize-css/bin/materialize.css"> -->
+    <!--<link rel="stylesheet" href="./materialize-css/bin/materialize.css">-->
 
-    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
 
 <body>
-    <nav class="">
+    <nav class="nav-main">
         <div class="jumbotron">
-            <div class="holder">
-
-            </div>
+            <div class="holder"></div>
         </div>
-        <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo"><i class="material-icons">camera</i>Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-            </ul>
-            <div class="greeting">
+        <div class="nav-wrapper">
+            <div class="nav-taskbar">
+                <a href="#!" class="brand-logo"><i class="material-icons">camera</i>Portfolio</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                    <li><a href="badges.html"><i class="material-icons">contact_mail</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons">event</i></a></li>
+                    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+            <div class="greeting-header">
                 <h1>Welcome To My</h1>
                 <p>Portfolio</p>
-
             </div>
         </div>
-
-
     </nav>
-
-    <div class="categories-list-wrapper lighten-1">
-        <div class="container categories pin-top" style="top: 0px;">
-            <ul class="categories db">
-                <li class="k"><a href="#all">All</a></li>
-                <li><a href="#polygon">Polygon</a></li>
-                <li><a href="#bigbang">Big Bang</a></li>
-                <li><a href="#sacred">Sacred Geometry</a></li>
+    <nav class="nav-catergories">
+        <div class="container pin-top">
+            <ul>
+                <li><a class="active" href="#all">Design</a></li>
+                <li><a class="pin" href="#Bootstrap">Bootstrap 4</a></li>
+                <li><a class="pin" href="#Material">Material</a></li>
             </ul>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
+    </nav>
 
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-
                 </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-
                 </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-
                 </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="portfolio-item" src="./img/card3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <section class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <h2 class="section-header">Skills</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="skill">
+                    <div class="icon-block">
+                        <h4>Front-End Development</h4>
+                        <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="icon-block">
+                        <h4>Back End Development</h4>
+                        <p>By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across
+                            all platforms allow for a more unified user experience.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="icon-block">
+                        <h4>Full Stack Development</h4>
+                        <p>We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="parallax parallax-container valign-wrapper">
+        <div class="container">
+            <div class="row center">
+                <h4 class="header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. </h4>
+            </div>
+        </div>
+        <div class="parallax">
+            <img alt="Unsplashed background" src="./img/paralax.jpg "></div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h3><i class="mdi-content-send brown-text "></i></h3>
+                        <h4>Contact Me</h4>
+                        <p class="left-align light ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien
+                            id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum
+                            sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="bio">
+                    <h5 class="white-text">My Bio</h5>
+                    <p class="grey-text text-lighten-4 ">Working hard to break into the programming scene</p>
+                </div>
+                <div class="sitemap">
+                    <h5 class="white-text ">Sitemap</h5>
+                    <ul>
+                        <li><a class="white-text " href="#! ">Projects</a></li>
+                        <li><a class="white-text " href="#! ">About</a></li>
+                        <li><a class="white-text " href="#! ">Future Projects</a></li>
+                    </ul>
+                </div>
+                <div class="connct">
+                    <h5 class="white-text ">Connect</h5>
+                    <ul class="social-icons ">
+                        <li><a class="white-text " href="#! "><svg xmlns="http://www.w3.org/2000/svg " class="icon icon-facebook " role="presentation " aria-hidden="true " viewBox="0 0 20 20 " focusable="false "><path fill="#444 " d="M 18.05 0.811 q
+                0.439 0 0.744 0.305 t 0.305 0.744 v 16.637 q 0 0.439 -0.305 0.744 t -0.744 0.305 h -4.732 v -7.221 h 2.415 l 0.342 -2.854 h -2.757 v -1.83 q 0 -0.659 0.293 -1 t 1.073 -0.342 h 1.488 V 3.762 q -0.976 -0.098 -2.171 -0.098 q -1.634 0 -2.635 0.964
+                t -1 2.72 V 9.47 H 7.951 v 2.854 h 2.415 v 7.221 H 1.413 q -0.439 0 -0.744 -0.305 t -0.305 -0.744 V 1.859 q 0 -0.439 0.305 -0.744 T 1.413 0.81 H 18.05 Z " /></svg></a></li>
+                        <li><a class="white-text " href="#! "><svg xmlns="http://www.w3.org/2000/svg " class="icon icon-twitter " role="presentation " aria-hidden="true " viewBox="0 0 20 20 " focusable="false "><path fill="#444 " d="M 19.551 4.208 q
+                -0.815 1.202 -1.956 2.038 q 0 0.082 0.02 0.255 t 0.02 0.255 q 0 1.589 -0.469 3.179 t -1.426 3.036 t -2.272 2.567 t -3.158 1.793 t -3.963 0.672 q -3.301 0 -6.031 -1.773 q 0.571 0.041 0.937 0.041 q 2.751 0 4.911 -1.671 q -1.284 -0.02 -2.292
+                -0.784 T 2.456 11.85 q 0.346 0.082 0.754 0.082 q 0.55 0 1.039 -0.163 q -1.365 -0.285 -2.262 -1.365 T 1.09 7.918 v -0.041 q 0.774 0.408 1.773 0.448 q -0.795 -0.53 -1.263 -1.396 t -0.469 -1.864 q 0 -1.019 0.509 -1.997 q 1.487 1.854 3.596 2.924
+                T 9.81 7.184 q -0.143 -0.509 -0.143 -0.897 q 0 -1.63 1.161 -2.781 t 2.832 -1.151 q 0.815 0 1.569 0.326 t 1.284 0.917 q 1.345 -0.265 2.506 -0.958 q -0.428 1.386 -1.732 2.18 q 1.243 -0.163 2.262 -0.611 Z " /></svg></a></li>
+                        <li><a class="white-text " href="#! "><svg xmlns="http://www.w3.org/2000/svg " class="icon icon-snapchat " role="presentation " aria-hidden="true " viewBox="0 0 50 50 " focusable="false "><path d="M 46.775 35.079 c -5.805 -0.957
+                -8.458 -6.971 -8.544 -7.164 a 1.536 1.536 0 0 0 -0.056 -0.132 c -0.175 -0.354 -0.352 -0.851 -0.204 -1.2 c 0.256 -0.604 1.462 -0.987 2.185 -1.216 c 0.254 -0.081 0.495 -0.158 0.684 -0.232 c 1.752 -0.692 2.629 -1.601 2.609 -2.703 c -0.017 -0.887
+                -0.696 -1.697 -1.694 -2.05 a 3 3 0 0 0 -1.148 -0.223 c -0.275 0 -0.688 0.039 -1.087 0.225 c -0.667 0.313 -1.256 0.481 -1.672 0.5 a 1.973 1.973 0 0 1 -0.234 -0.024 l 0.042 -0.687 c 0.196 -3.112 0.44 -6.984 -0.611 -9.342 c -3.098 -6.942 -9.669
+                -7.481 -11.613 -7.481 l -0.883 0.008 c -1.936 0 -8.493 0.539 -11.587 7.477 c -1.052 2.358 -0.808 6.229 -0.612 9.339 l 0.008 0.12 l 0.035 0.566 c -0.433 0.078 -1.28 -0.066 -2.158 -0.477 c -1.195 -0.557 -3.349 0.18 -3.646 1.741 c -0.131 0.692
+                0.029 2.003 2.575 3.01 c 0.19 0.076 0.431 0.153 0.687 0.233 c 0.72 0.229 1.925 0.611 2.182 1.216 c 0.148 0.35 -0.028 0.845 -0.236 1.271 c -0.109 0.255 -2.746 6.266 -8.564 7.224 c -0.742 0.12 -1.27 0.777 -1.228 1.534 c 0.012 0.201 0.06 0.401
+                0.143 0.596 c 0.528 1.236 2.445 2.087 6.025 2.672 c 0.062 0.208 0.131 0.521 0.169 0.696 c 0.077 0.352 0.157 0.714 0.267 1.089 c 0.104 0.354 0.468 1.178 1.603 1.178 c 0.342 0 0.719 -0.074 1.119 -0.152 c 0.596 -0.117 1.338 -0.262 2.291 -0.262
+                c 0.53 0 1.078 0.046 1.628 0.138 c 1.016 0.169 1.935 0.818 3.001 1.571 c 1.664 1.177 3.55 2.51 6.475 2.51 c 0.077 0 0.155 -0.002 0.23 -0.007 c 0.108 0.005 0.216 0.007 0.326 0.007 c 2.924 0 4.812 -1.334 6.479 -2.512 c 1.017 -0.72 1.978 -1.399
+                2.995 -1.569 a 10.067 10.067 0 0 1 1.63 -0.138 c 0.919 0 1.644 0.118 2.292 0.245 c 0.464 0.091 0.83 0.135 1.169 0.135 c 0.759 0 1.339 -0.435 1.55 -1.159 c 0.11 -0.37 0.19 -0.724 0.268 -1.082 c 0.029 -0.135 0.103 -0.47 0.169 -0.692 c 3.58 -0.584
+                5.498 -1.434 6.022 -2.661 c 0.084 -0.194 0.133 -0.397 0.146 -0.608 a 1.467 1.467 0 0 0 -1.227 -1.528 Z " /></svg></a></li>
+                        <li><a class="white-text " href="#! "><svg xmlns="http://www.w3.org/2000/svg " class="icon icon-vimeo " role="presentation " aria-hidden="true " viewBox="0 0 20 20 " focusable="false "><path fill="#444 " d="M 0.215 6.814 l 0.899
+                1.203 q 1.249 -0.929 1.508 -0.929 q 0.99 0 1.843 3.153 l 0.746 2.826 q 0.517 1.958 0.807 3.009 q 1.127 3.153 2.833 3.153 q 2.712 0 6.581 -5.21 q 3.793 -4.951 3.93 -7.83 v -0.335 q 0 -3.504 -2.803 -3.595 h -0.213 q -3.763 0 -5.179 4.616 q 0.823
+                -0.35 1.432 -0.35 q 1.295 0 1.295 1.341 q 0 0.168 -0.015 0.35 q -0.091 1.082 -1.28 2.955 q -1.219 1.965 -1.813 1.965 q -0.792 0 -1.401 -2.986 q -0.183 -0.701 -0.777 -4.524 q -0.259 -1.645 -0.96 -2.437 q -0.609 -0.686 -1.523 -0.701 q -0.122
+                0 -0.259 0.015 q -0.96 0.091 -2.849 1.752 q -0.975 0.914 -2.803 2.559 Z " /></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ">
+            <div class="container ">
+                Made by <a class="brown-text text-lighten-3 " href="# ">UndreamtMayhem</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="./js/materialize.min.js "></script>
+    <script type="text/javascript " src="./js/main.js "></script>
 
 </body>
 

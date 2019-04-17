@@ -1,0 +1,17 @@
+.bio {
+    @extend .col;
+    @extend .s12;
+    @extend .l6;
+}
+
+.sitemap {
+    @extend .col;
+    @extend .s12;
+    @extend .l3;
+}
+
+.connect {
+    @extend .col;
+    @extend .s12;
+    @extend .l3;
+}

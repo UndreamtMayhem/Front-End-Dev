@@ -1,0 +1,43 @@
+.nav-main {
+    position: relative;
+    top: 0;
+    z-index: 10;
+    height: 88vh;
+    background: red;
+    transition: background-color .3s, opacity .2s, visibility 0s;
+}
+
+.nav-catergories {
+    height: 85px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    .active {
+        border-radius: 35px;
+        height: 10vh;
+        margin-right: 3px;
+        padding: 0 22px;
+        background: #a8c0ff;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #3f2b96, #a8c0ff);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    a {
+        &:hover {
+            border-radius: 35px;
+            background: #a8c0ff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3f2b96, #a8c0ff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    }
+}
+
+.nav-taskbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    height: 65px;
+}

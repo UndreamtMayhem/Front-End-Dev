@@ -1,0 +1,45 @@
+body {
+    background-color: #ebeced;
+}
+
+section {
+    padding: 0px;
+}
+
+section .gallery {
+    background-color: #D3D3D3
+}
+
+.skills {
+    .section-header {
+        margin: 0 0 0.75rem 0;
+    }
+}
+
+.skill {
+    @extend .col;
+    @extend .s12;
+    @extend .m4;
+    .icon-block {
+        padding: 0 15px;
+    }
+    h4 {
+        text-align: center;
+    }
+    p {
+        font-weight: 300;
+    }
+}
+
+.parallax.parallax-container {
+    .header {
+        @extend .col;
+        @extend .s12;
+        font-weight: 300;
+        color: white;
+    }
+    img {
+        opacity: 1;
+        transform: translate3d(-50%, 212.925px, 0px);
+    }
+}
