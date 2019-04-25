@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
+    <aside class="">
+        <ul class="side-nav fixed" id="mobile-demo">
+            <div class="row">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#messages">Messages</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a class="active" href="#test2">Active (12)</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="test2">
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Name............</p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Name............</p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Name............</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="messages" class="">
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <span class="title">Name ......</span>
+                        <span class="right">15:32</span>
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Message............</p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <span class="title">Name ......</span>
+                        <span class="right">15:32</span>
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Message............</p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="https://placeimg.com/640/480/any" alt="" class="circle">
+                        <span class="title">Name ......</span>
+                        <span class="right">15:32</span>
+                        <p>
+                            <i class="material-icons right">radio_button_unchecked</i>Message............</p>
+                    </li>
+                </ul>
+            </div>
+            <footer class="aside-footer blue">
+                <div class="nav-icons">
+                    <i class="material-icons">home</i>
+                    <i class="material-icons">people</i>
+                    <i class="material-icons">settings</i>
+                </div>
+            </footer>
+        </ul>
+    </aside>
+    -->
+    <div id="root"></div>
+
+
+
+    <div class="col s12 l12 joined-nav">
+        <div class="navbar-fixed">
+            <nav class="blue">
+                <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <i class="material-icons">fullscreen</i>
+                <a href="#" class="">messenger</a>
+                <i class="large material-icons">call</i>
+                <i class="large material-icons">video_call</i>
+            </nav>
+        </div>
+    </div>
+
+    <main class="col s12 l9 offset-l3">
+        <div class="message-container">
+            <img src="https://placeimg.com/640/480/any" alt="" class="circle left" width="27px" height="55px">
+            <div class="message blue">
+                <div class="row">
+                    <p class="col s12">efjeiruoewiur</p>
+                </div>
+            </div>
+        </div>
+        <div class="message-container">
+            <div class="message green col s6">
+                <p class=""> gfhgfhgf</p>
+            </div>
+        </div>
+        <div class="message-container">
+            <img src="https://placeimg.com/640/480/any" alt="" class="circle left" width="27px" height="55px">
+            <div class="message blue right">
+                <div class="row">
+                    <p class="col s12">efjeiruoewiur</p>
+                </div>
+            </div>
+        </div>
+        <div class="message-container">
+            <div class="message green col s6">
+                <p class=""> gfhgfhgf</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-nav blue col offset-l1">
+        <div class="nav-icons">
+            <i class="material-icons">home</i>
+            <i class="material-icons">people</i>
+            <i class="material-icons">settings</i>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

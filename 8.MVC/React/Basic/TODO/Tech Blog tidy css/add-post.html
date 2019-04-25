@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>DailiesTech</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Include Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!-- Include JQuery -->
+	<script src="js/vendor/jquery-1.11.0.min.js"></script>
+	<!-- Modernizr -->
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!-- Main JavaScript -->
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div id="branding">
+				<img src="img/log.png" alt="The DailiesTech">
+				<h1 class="title">DailiesTech</h1>
+			</div>
+			<!-- branding -->
+			<nav id="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="single-post.html">Single Post</a></li>
+					<li><a href="add-post.html">Add Post</a></li>
+				</ul>
+				<i styles="color: white;" class="fa fa-bars" aria-hidden="true" id="hamburger-btn"></i>
+
+			</nav>
+
+
+		</div>
+		<!-- container -->
+	</header>
+	<div class="sidebar c3" id="rightDrawer">
+		<div class="sidebar-top">
+			<div class="search">
+				<form>
+					<input type="search" placeholder="Search Our Blogs..." id='search-text-input'>
+					<div id='button-holder'>
+						<img src='img/search.png' />
+					</div>
+				</form>
+			</div>
+			<a href="#" onclick="w3_close()" class="right close-btn " title="close menu" id="close-btn">
+				<i class="fa fa-remove"></i>
+			</a>
+			<!--<h4 class="sidebar-title title"><b>DailiesTech</b></h4> -->
+		</div>
+		<div class="bar-block">
+			<a href="#portfolio" onclick="w3_close()" class="bar-item"><i class="link-font"></i>Web Development</a>
+			<a href="#about" onclick="w3_close()" class="bar-item "><i class="link-font"></i>Design</a>
+			<a href="#contact" onclick="w3_close()" class="bar-item "><i class="link-font"></i>SEO & Marketing</a>
+			<a href="#contact" onclick="w3_close()" class="bar-item "><i class="link-font"></i>Cloud & Hosting</a>
+			<a href="#contact" onclick="w3_close()" class="bar-item "><i class="link-font"></i>Gadgets</a>
+			<a href="#contact" onclick="w3_close()" class="bar-item "><i class="link-font"></i>Software</a>
+		</div>
+		<div class="w3-panel w3-large">
+			<img src="img/icons/facebook.png">
+			<img src="img/icons/instagram.png">
+			<img src="img/icons/googleplus.png">
+			<img src="img/icons/kik.png">
+			<img src="img/icons/linkedin.png">
+			<img src="img/icons/pinterest.png">
+			<img src="img/icons/snapchat.png">
+
+		</div>
+
+	</div>
+	<main class="container">
+		<aside id="sidebar" class="">
+			<div class="search">
+				<form>
+					<input type="search" placeholder="Search Our Blog..."><input type="image" src="img/search.png" alt="Search">
+				</form>
+			</div>
+			<!-- search -->
+			<div class="clearfix"></div>
+			<nav id="sub-nav">
+				<ul>
+					<li><a href="#">Web Development</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">SEO & Marketing</a></li>
+					<li><a href="#">Cloud & Hosting</a></li>
+					<li><a href="#">Gadgets</a></li>
+					<li><a href="#">Software</a></li>
+				</ul>
+			</nav>
+			
+		</aside>
+
+		<section id="content">
+			<div class="add-form">
+				<h2>Add Post</h2>
+				<form>
+					<p>
+						<label>Post Title: </label>
+						<input type="text">
+					</p>
+					<p>
+						<label>Category: </label>
+						<div class="styled-select slate">
+						<select>
+							<option value="">Web Development</option>
+							<option value="">Design</option>
+							<option value="">Cloud & Hosting</option>
+							<option value="">Gadgets</option>
+							<option value="">Software</option>
+							<option value="">SEO & Marketing</option>
+							<option value="">SEO & Marketing</option>
+						</select>
+						</div>
+					</p>
+					<p>
+						<label>Body: </label>
+						<textarea></textarea>
+					</p>
+					<p>
+						<label>Select Image: </label>
+						<input type="file">
+					</p>
+					<p>
+						<button>Add Post</button>
+					</p>
+				</form>
+			</div>
+			<!-- add form -->
+		</section>
+		</div>
+		<!-- container -->
+	</main>
+		<footer id="main-footer">
+			<div class="container">
+				<div class="left-footer">
+					<h3>Social Networks</h3>
+					<ul class="social-ul w3-hoverable">
+						<li class="w3-padding-16">
+							<img src="img/icons/facebook.png" class="w3-left w3-margin-right" style="width:35px">
+							<span class="w3-large">Facebook</span><br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/icons/googleplus.png" class="w3-left w3-margin-right" style="width:35px">
+							<span class="w3-large">GooglePlus</span><br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/icons/linkedin.png" class="w3-left w3-margin-right" style="width:35px">
+							<span class="w3-large">Linkedin</span><br>
+
+						</li>
+						<li class="w3-padding-16">
+							<img src="img/icons/instagram.png" class="w3-left w3-margin-right" style="width:35px">
+							<span class="w3-large">Instgram</span><br>
+						</li>
+					</ul>
+				</div>
+				<div class="third">
+					<h3>POPULAR TAGS</h3>
+					<p>
+						<span class="tag">Web Development</span>
+						<span class="tag">Design</span>
+						<span class="tag">Cloud & Hosting</span>
+						<span class="tag ">Gadgets</span>
+						<span class="tag ">Software</span>
+						<span class="tag ">SEO & Marketing</span>
+						<span class="tag ">Front-End-Developement</span>
+						<span class="tag">JS</span>
+						<span class="tag ">HTML</span>
+						<span class="tag ">CSS</span>
+						<span class="tag ">Server-Side</span>
+						<span class="tag ">MongoDb</span>
+						<span class="tag ">Django</span>
+						<span class="tag ">Flask</span>
+					</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-right">
+					<h3>SiteMap</h3>
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#" class="active">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Resources</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</nav>
+				</div>
+		</footer>
+		<div class="w3-black w3-center w3-padding-24 end-banner">
+			<p class="">Copyright &copy; 2017, The DailiesTech</p>
+		</div>
+</body>
+
+</html>
