@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $(".button-collapse").sideNav();
     $('select').material_select();
     $('#modal1').modal();
@@ -14,7 +14,7 @@ $(document).ready(function () {
         alignment: 'right', // Displays dropdown with edge aligned to the left of button
         stopPropagation: false // Stops event propagation
     });
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('.slider').slider();
     });
 })

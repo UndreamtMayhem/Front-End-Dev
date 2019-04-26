@@ -2,6 +2,14 @@ img {
     width: 100%;
 }
 
+.offset-l3 {
+    margin-left: 25%;
+}
+
+.col.offset-l1 {
+    margin-left: 8.33%;
+}
+
 .item-card {
     height: 350px;
 }

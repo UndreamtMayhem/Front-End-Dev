@@ -1,22 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Aside from './widgets/Aside';
-
-
+import Nav from './widgets/Nav';
+import MessageContainer from './widgets/MessageContainer';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      
-    };
-  }
 
   render() {
     return (
-      <Aside />
-  
+      <div>
+        <Aside/>
+        <Nav/>
+        <MessageContainer/>
+        <footer className="bottom-nav blue col offset-l1">
+          <div className="nav-icons">
+            <i className="material-icons">home</i>
+            <i className="material-icons">people</i>
+            <i className="material-icons">settings</i>
+          </div>
+        </footer>
+
+      </div>
 
     );
   }
